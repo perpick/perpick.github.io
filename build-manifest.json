@@ -1,0 +1,104 @@
+{
+  "inputs": {
+    "_snowpack/env.js": {
+      "bytes": 97,
+      "imports": []
+    },
+    "dist/App.svelte.css": {
+      "bytes": 370,
+      "imports": []
+    },
+    "_snowpack/pkg/svelte/internal.js": {
+      "bytes": 7401,
+      "imports": []
+    },
+    "dist/styles/TailwindStyles.svelte.css": {
+      "bytes": 4584,
+      "imports": []
+    },
+    "dist/styles/TailwindStyles.svelte.js": {
+      "bytes": 375,
+      "imports": [
+        {
+          "path": "dist/styles/TailwindStyles.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/App.svelte.js": {
+      "bytes": 1663,
+      "imports": [
+        {
+          "path": "dist/App.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/styles/TailwindStyles.svelte.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/index.js": {
+      "bytes": 367,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/App.svelte.js",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/dist/index.js": {
+      "imports": [],
+      "exports": [
+        "default"
+      ],
+      "inputs": {
+        "_snowpack/env.js": {
+          "bytesInOutput": 91
+        },
+        "dist/App.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/svelte/internal.js": {
+          "bytesInOutput": 2605
+        },
+        "dist/styles/TailwindStyles.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "dist/App.svelte.js": {
+          "bytesInOutput": 746
+        },
+        "dist/index.js": {
+          "bytesInOutput": 134
+        }
+      },
+      "bytes": 3689
+    },
+    "../~~bundle~~/dist/index.css": {
+      "imports": [],
+      "inputs": {
+        "dist/App.svelte.css": {
+          "bytesInOutput": 366
+        },
+        "dist/styles/TailwindStyles.svelte.css": {
+          "bytesInOutput": 4436
+        }
+      },
+      "bytes": 4803
+    }
+  }
+}
