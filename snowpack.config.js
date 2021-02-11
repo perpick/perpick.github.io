@@ -5,8 +5,8 @@ module.exports = {
 		"@src": "./src"
 	},
 	mount: {
-    public: { url: '/', static: true },
-    src: { url: '/dist' },
+		public: { url: '/', static: true },
+		src: { url: '/dist' },
 	},
 	plugins: [
 		'@snowpack/plugin-svelte',
