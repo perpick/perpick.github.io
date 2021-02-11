@@ -1,0 +1,10 @@
+[
+  {
+    "type": "MALE",
+    "tags": ["Masculine", "Shared"]
+  },
+  {
+    "type": "FEMALE",
+    "tags":  ["Feminine", "Shared"]
+  }
+]
