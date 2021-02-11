@@ -2,9 +2,11 @@
   import { onMount } from "svelte";
   import loader from "@beyonk/async-script-loader";
   import { gaStore } from "./store";
-  export let mainTagManagerId: string;
-  export let subTagManagerId: string[];
+  // export let subTagManagerId: string[];
   export const enabled = true;
+
+  const mainTagManagerId = process.env.GA_TAG_MANAGER_ID;
+
   onMount(() => {
     if (!enabled) {
       return;
@@ -33,9 +35,9 @@
     window.dataLayer = window.dataLayer || [];
     
     gtag("js", new Date());
-    subTagManagerId.forEach((p) => {
-      gtag("config", p);
-    });
+    // subTagManagerId.forEach((p) => {
+    //   gtag("config", p);
+    // });
 
     return gaStore.subscribe((queue) => {
       let next = queue.length && queue.shift();
