@@ -1,12 +1,9 @@
 <script lang="typescript">
-  import { GoogleAnalytics } from "@src/utils";
-
   import "./styles/TailwindStyles.svelte";
 
   const message = "Learn Svelte";
 </script>
 
-<GoogleAnalytics mainTagManagerId={"1"} subTagManagerId={[""]} />
 <div class="text-center font-serif">
   <header
     class="bg-gray-100 h-screen flex justify-center items-center flex-col text-3xl"

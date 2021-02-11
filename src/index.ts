@@ -1,6 +1,6 @@
 import App from "./App.svelte";
 
-var app = new App({
+const app = new App({
 	target: document.body,
 });
 
@@ -9,11 +9,14 @@ export default app;
 if (import.meta?.hot) {
 	import.meta.hot.accept();
 	import.meta.hot.dispose(() => {
-		app.$destroy();
+		app.$destroy();	
 	});
 }
 
 declare global {
+	interface Window {
+	  dataLayer: any[]
+	}
 	interface ImportMeta {
 		hot: {
 			accept: Function;

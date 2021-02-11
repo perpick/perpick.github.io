@@ -20,12 +20,15 @@
 	"scripts": {
 		"start": "snowpack dev",
 		"build": "snowpack build",
-		"test": "jest"
+		"test": "jest",
+		"lint": "eslint"
 	},
 	"dependencies": {
 		"svelte": "^3.24.0"
 	},
 	"devDependencies": {
+		"@beyonk/async-script-loader": "^2.0.0",
+		"@beyonk/svelte-google-analytics": "^2.0.0",
 		"@snowpack/app-scripts-svelte": "^2.0.0",
 		"@snowpack/plugin-build-script": "^2.1.0",
 		"@snowpack/plugin-dotenv": "^2.0.4",

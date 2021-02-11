@@ -14,39 +14,11 @@ module.exports = {
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         project: "./tsconfig.json",
-        "ecmaFeatures": {
-            "jsx": true
-        },
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-	"settings": {
-		"react": {
-			"version": "detect"
-		}
-	},
-    plugins: ["svelte3", "@typescript-eslint"],
+    plugins: [ "@typescript-eslint", "svelte3"],
 	"rules": {
-		"react-hooks/rules-of-hooks": "error",
-		"react-hooks/exhaustive-deps": "warn",
-		"import/no-unresolved": 0,
-		"react/jsx-filename-extension": [
-			2,
-			{
-				"extensions": [
-					".ts",
-					".tsx"
-				]
-			}
-		],
-		"react/jsx-indent": [
-			2,
-			2
-		],
-		"react/jsx-indent-props": [
-			2,
-			2
-		],
 		"@typescript-eslint/no-inferrable-types": "off",
 		"@typescript-eslint/no-unsafe-assignment": "off",
 		"@typescript-eslint/no-unsafe-member-access": "off",
