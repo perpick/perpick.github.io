@@ -8,12 +8,103 @@
       "bytes": 370,
       "imports": []
     },
-    "_snowpack/pkg/svelte/internal.js": {
-      "bytes": 7401,
+    "_snowpack/pkg/common/index-0c8e6957.js": {
+      "bytes": 8303,
       "imports": []
     },
+    "_snowpack/pkg/svelte/internal.js": {
+      "bytes": 297,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-0c8e6957.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/svelte.js": {
+      "bytes": 59,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-0c8e6957.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/@beyonk/async-script-loader.js": {
+      "bytes": 796,
+      "imports": []
+    },
+    "_snowpack/pkg/svelte/store.js": {
+      "bytes": 1785,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-0c8e6957.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/utils/GoogleAnalytics/store.js": {
+      "bytes": 102,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/svelte/store.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/utils/GoogleAnalytics/GoogleAnalytics.svelte.js": {
+      "bytes": 1817,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/@beyonk/async-script-loader.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/utils/GoogleAnalytics/store.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/utils/GoogleAnalytics/types.js": {
+      "bytes": 1503,
+      "imports": []
+    },
+    "dist/utils/GoogleAnalytics/generated-functions.js": {
+      "bytes": 1987,
+      "imports": [
+        {
+          "path": "dist/utils/GoogleAnalytics/store.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/utils/GoogleAnalytics/types.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/utils/index.js": {
+      "bytes": 169,
+      "imports": [
+        {
+          "path": "dist/utils/GoogleAnalytics/GoogleAnalytics.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/utils/GoogleAnalytics/generated-functions.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/styles/TailwindStyles.svelte.css": {
-      "bytes": 4584,
+      "bytes": 4600,
       "imports": []
     },
     "dist/styles/TailwindStyles.svelte.js": {
@@ -30,7 +121,7 @@
       ]
     },
     "dist/App.svelte.js": {
-      "bytes": 1663,
+      "bytes": 2404,
       "imports": [
         {
           "path": "dist/App.svelte.css",
@@ -41,13 +132,17 @@
           "kind": "import-statement"
         },
         {
+          "path": "dist/utils/index.js",
+          "kind": "import-statement"
+        },
+        {
           "path": "dist/styles/TailwindStyles.svelte.js",
           "kind": "import-statement"
         }
       ]
     },
     "dist/index.js": {
-      "bytes": 367,
+      "bytes": 369,
       "imports": [
         {
           "path": "_snowpack/env.js",
@@ -68,25 +163,46 @@
       ],
       "inputs": {
         "_snowpack/env.js": {
-          "bytesInOutput": 91
+          "bytesInOutput": 98
         },
         "dist/App.svelte.css": {
           "bytesInOutput": 0
         },
+        "_snowpack/pkg/common/index-0c8e6957.js": {
+          "bytesInOutput": 2888
+        },
         "_snowpack/pkg/svelte/internal.js": {
-          "bytesInOutput": 2605
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/svelte.js": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/@beyonk/async-script-loader.js": {
+          "bytesInOutput": 317
+        },
+        "_snowpack/pkg/svelte/store.js": {
+          "bytesInOutput": 419
+        },
+        "dist/utils/GoogleAnalytics/store.js": {
+          "bytesInOutput": 12
+        },
+        "dist/utils/GoogleAnalytics/GoogleAnalytics.svelte.js": {
+          "bytesInOutput": 753
+        },
+        "dist/utils/GoogleAnalytics/types.js": {
+          "bytesInOutput": 944
         },
         "dist/styles/TailwindStyles.svelte.css": {
           "bytesInOutput": 0
         },
         "dist/App.svelte.js": {
-          "bytesInOutput": 746
+          "bytesInOutput": 935
         },
         "dist/index.js": {
-          "bytesInOutput": 134
+          "bytesInOutput": 138
         }
       },
-      "bytes": 3689
+      "bytes": 6620
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
@@ -95,10 +211,10 @@
           "bytesInOutput": 366
         },
         "dist/styles/TailwindStyles.svelte.css": {
-          "bytesInOutput": 4436
+          "bytesInOutput": 4450
         }
       },
-      "bytes": 4803
+      "bytes": 4817
     }
   }
 }
