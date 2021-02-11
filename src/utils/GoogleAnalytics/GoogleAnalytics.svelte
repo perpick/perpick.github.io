@@ -5,17 +5,17 @@
   // export let subTagManagerId: string[];
   export const enabled = true;
 
-  const mainTagManagerId = process.env.GA_TAG_MANAGER_ID;
-
+  const { SNOWPACK_PUBLIC_GA_TAG_MANAGER_ID } = import.meta.env;
   onMount(() => {
     if (!enabled) {
       return;
     }
+    console.log(import.meta)
     loader(
       [
         {
           type: "script",
-          url: `//www.googletagmanager.com/gtag/js?id=${mainTagManagerId}`,
+          url: `//www.googletagmanager.com/gtag/js?id=${SNOWPACK_PUBLIC_GA_TAG_MANAGER_ID}`,
         },
       ],
       test,
