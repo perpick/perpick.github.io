@@ -41,6 +41,7 @@
 		"@types/jest": "^26.0.20",
 		"@types/snowpack-env": "^2.3.3",
 		"autoprefixer": "^10.2.4",
+		"axios": "^0.21.1",
 		"chai": "^4.3.0",
 		"enzyme": "^3.11.0",
 		"eslint": "^7.19.0",

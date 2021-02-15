@@ -10,7 +10,6 @@
     if (!enabled) {
       return;
     }
-    console.log(import.meta)
     loader(
       [
         {
@@ -23,17 +22,16 @@
     );
   });
 
-  const test= ()=> (
-      Boolean(window.dataLayer).valueOf() && Array.isArray(window.dataLayer)
-    );
+  const test = () =>
+    Boolean(window.dataLayer).valueOf() && Array.isArray(window.dataLayer);
 
-  const gtag= (...args: any[]) => {
+  const gtag = (...args: any[]) => {
     window.dataLayer.push(args);
-  }
+  };
 
-  const callback= ()=> {
+  const callback = () => {
     window.dataLayer = window.dataLayer || [];
-    
+
     gtag("js", new Date());
     // subTagManagerId.forEach((p) => {
     //   gtag("config", p);
@@ -47,5 +45,5 @@
         next = queue.shift();
       }
     });
-  }
+  };
 </script>

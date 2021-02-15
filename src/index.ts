@@ -26,6 +26,7 @@ declare global {
 			MODE: string;
 			SNOWPACK_PUBLIC_API_URL: string;
 			SNOWPACK_PUBLIC_GA_TAG_MANAGER_ID: string;
+			SNOWPACK_PUBLIC_ES_URL: string;
 		};
 	}
 }
