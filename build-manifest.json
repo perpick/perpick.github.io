@@ -249,7 +249,7 @@
       "imports": []
     },
     "dist/utils/HttpClient.js": {
-      "bytes": 858,
+      "bytes": 810,
       "imports": [
         {
           "path": "_snowpack/env.js",
@@ -318,7 +318,7 @@
       ]
     },
     "dist/utils/GoogleAnalytics/GoogleAnalytics.svelte.js": {
-      "bytes": 1649,
+      "bytes": 1584,
       "imports": [
         {
           "path": "_snowpack/env.js",
@@ -648,7 +648,7 @@
           "bytesInOutput": 14846
         },
         "dist/utils/HttpClient.js": {
-          "bytesInOutput": 347
+          "bytesInOutput": 315
         },
         "dist/api/perfumes.js": {
           "bytesInOutput": 597
@@ -666,7 +666,7 @@
           "bytesInOutput": 13
         },
         "dist/utils/GoogleAnalytics/GoogleAnalytics.svelte.js": {
-          "bytesInOutput": 617
+          "bytesInOutput": 572
         },
         "dist/utils/index.js": {
           "bytesInOutput": 0
@@ -714,7 +714,7 @@
           "bytesInOutput": 138
         }
       },
-      "bytes": 64765
+      "bytes": 64688
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
