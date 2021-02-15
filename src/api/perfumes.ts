@@ -1,21 +1,27 @@
 import Request from "@src/utils/HttpClient"
+import type { Filter } from '@src/models'
+import type { AxiosPromise } from "axios"
 
 const Apis = {
-    getPerfumes: () => {
-        const { SNOWPACK_PUBLIC_ES_URL } = import.meta.env
+    getPerfumes: <T>({ matchStr, filter }: { matchStr: string, filter: Filter}): AxiosPromise<T> => {
+        const { SNOWPACK_PUBLIC_ES_URL, SNOWPACK_PUBLIC_ES_USERNAME, SNOWPACK_PUBLIC_ES_PASSWORD } = import.meta.env
         return Request({
             baseURL: SNOWPACK_PUBLIC_ES_URL,
             method: "POST",
             url: "/kor_perfumes/_search",
+            auth: {
+              username: SNOWPACK_PUBLIC_ES_USERNAME,
+              password: SNOWPACK_PUBLIC_ES_PASSWORD,
+            },
             data: {
                 "query": {
                     "bool": {
                       "should": [
-                        { "match": { "reviews": { "query": "친구 발랄 칭찬 청량 데일리 도전 자극 에디션 오래 용기 감동 아이 달달함 산뜻함 사랑 인기 로맨스 신선 기억 신비 니치 편리 판타지 대박 최애"} } }
+                        { "match": { "reviews": { "query": matchStr} } }
                       ],
                       "filter": {
                         "terms": {
-                          "gender": [ "Masculine","Shared"]
+                          ...filter
                         }
                       }
                     }
