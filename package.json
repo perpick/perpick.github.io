@@ -29,6 +29,7 @@
 	"devDependencies": {
 		"@beyonk/async-script-loader": "^2.0.0",
 		"@beyonk/svelte-google-analytics": "^2.0.0",
+		"@okrad/svelte-progressbar": "^1.11.1",
 		"@snowpack/app-scripts-svelte": "^2.0.0",
 		"@snowpack/plugin-build-script": "^2.1.0",
 		"@snowpack/plugin-dotenv": "^2.0.4",

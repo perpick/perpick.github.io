@@ -1,12 +1,12 @@
 import mbtis from '@src/constants/mbtis.json'
 import tags from '@src/constants/mbti_tags.json'
 import titles from '@src/constants/titles.json'
-import type { MBTI, Title } from '@src/models'
+import genders from '@src/constants/gender_tags.json'
 
-export const getDescription = (mbti: MBTI | undefined) =>
+export const getDescription = (mbti: string | undefined) =>
     mbti ? mbtis.find(m => m.mbti === mbti): undefined
 
-export const getTagsWithAttr = (mbti: MBTI| undefined) => {
+export const getTagsWithAttr = (mbti: string| undefined) => {
     if(!mbti) return undefined
     
     const attrs = mbti.split('')
@@ -24,5 +24,8 @@ export const getTagsWithAttr = (mbti: MBTI| undefined) => {
     return tag.flat()
 }
 
-export const getTitle = (title: Title| undefined) => 
+export const getTitle = (title: string | undefined) => 
     title ?  titles.find(t => t.type === title) : undefined
+
+export const getGender = (gender: string | undefined) => 
+    gender ?  genders.find(g => g.type === gender) : undefined

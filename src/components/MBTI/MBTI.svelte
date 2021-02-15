@@ -14,5 +14,6 @@
 <style>
 </style>
     
-<div class="">
+<div class="m-4">
+  <p class="m-2">{descriptions.detail}</p>
 </div>

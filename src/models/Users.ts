@@ -4,5 +4,5 @@ import type { Title } from "./Titles";
 export type Users = {
     mbti?: MBTI;
     title?: Title;
-    selects: []
+    selects: string[]
 }

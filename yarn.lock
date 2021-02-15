@@ -1093,6 +1093,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@okrad/svelte-progressbar@^1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@okrad/svelte-progressbar/-/svelte-progressbar-1.11.1.tgz#1f55ea1f35fb4e76c6f0244bd5367436ef8912fc"
+  integrity sha512-UDqEcUXuqJo0qvou6H4EK5FLx3wQTqYkhAJAyetLi3JomhuEkjMJ+kwogHVz2FodQMkc5XfjMPJPnj29+QLQyA==
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.2.tgz#858f5c4b48d80778fde4b9d541f27edc0d56488b"
