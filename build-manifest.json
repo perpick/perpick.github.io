@@ -4,15 +4,15 @@
       "bytes": 97,
       "imports": []
     },
-    "_snowpack/pkg/common/index-3f7056c0.js": {
-      "bytes": 9492,
+    "_snowpack/pkg/common/index-83b2e6bf.js": {
+      "bytes": 14694,
       "imports": []
     },
     "_snowpack/pkg/svelte/internal.js": {
-      "bytes": 431,
+      "bytes": 564,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-3f7056c0.js",
+          "path": "_snowpack/pkg/common/index-83b2e6bf.js",
           "kind": "import-statement"
         }
       ]
@@ -21,7 +21,7 @@
       "bytes": 1785,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-3f7056c0.js",
+          "path": "_snowpack/pkg/common/index-83b2e6bf.js",
           "kind": "import-statement"
         }
       ]
@@ -78,33 +78,228 @@
         }
       ]
     },
-    "dist/components/Welcome.component.svelte.js": {
-      "bytes": 769,
+    "dist/components/Typewriter/Typewriter.svelte.css": {
+      "bytes": 550,
+      "imports": []
+    },
+    "_snowpack/pkg/svelte.js": {
+      "bytes": 122,
       "imports": [
         {
-          "path": "_snowpack/pkg/svelte/internal.js",
+          "path": "_snowpack/pkg/common/index-83b2e6bf.js",
           "kind": "import-statement"
         }
       ]
     },
-    "dist/pages/Home.page.svelte.js": {
-      "bytes": 1016,
+    "dist/components/Typewriter/helpers/hasSingleTextNode.js": {
+      "bytes": 125,
+      "imports": []
+    },
+    "dist/components/Typewriter/helpers/createElement.js": {
+      "bytes": 175,
+      "imports": []
+    },
+    "dist/components/Typewriter/helpers/getElements.js": {
+      "bytes": 751,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/helpers/hasSingleTextNode.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Typewriter/helpers/createElement.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Typewriter/helpers/sleep.js": {
+      "bytes": 89,
+      "imports": []
+    },
+    "dist/components/Typewriter/helpers/rng.js": {
+      "bytes": 87,
+      "imports": []
+    },
+    "dist/components/Typewriter/helpers/typingInterval.js": {
+      "bytes": 211,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/helpers/sleep.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Typewriter/helpers/rng.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Typewriter/helpers/writeEffect.js": {
+      "bytes": 560,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/helpers/typingInterval.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Typewriter/helpers/unwriteEffect.js": {
+      "bytes": 557,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/helpers/typingInterval.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Typewriter/helpers/getRandomElement.js": {
+      "bytes": 848,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/helpers/rng.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Typewriter/modes/loopTypewriter.js": {
+      "bytes": 838,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/helpers/writeEffect.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Typewriter/helpers/unwriteEffect.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Typewriter/helpers/getRandomElement.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Typewriter/helpers/onAnimationEnd.js": {
+      "bytes": 515,
+      "imports": []
+    },
+    "dist/components/Typewriter/helpers/getLongestTextElement.js": {
+      "bytes": 374,
+      "imports": []
+    },
+    "dist/components/Typewriter/modes/typewriter.js": {
+      "bytes": 753,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/helpers/writeEffect.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Typewriter/helpers/onAnimationEnd.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Typewriter/helpers/getLongestTextElement.js",
+          "kind": "dynamic-import"
+        }
+      ]
+    },
+    "dist/components/Typewriter/modes/index.js": {
+      "bytes": 471,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/helpers/getElements.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Typewriter/modes/loopTypewriter.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/components/Typewriter/modes/typewriter.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/components/Typewriter/helpers/sleep.js",
+          "kind": "dynamic-import"
+        }
+      ]
+    },
+    "dist/components/Typewriter/Typewriter.svelte.js": {
+      "bytes": 5203,
+      "imports": [
+        {
+          "path": "dist/components/Typewriter/Typewriter.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Typewriter/modes/index.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/axios.js": {
+      "bytes": 46452,
+      "imports": []
+    },
+    "dist/utils/HttpClient.js": {
+      "bytes": 858,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/axios.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/api/perfumes.js": {
+      "bytes": 999,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/utils/HttpClient.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Welcome/Welcome.svelte.js": {
+      "bytes": 2192,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/Welcome.component.svelte.js",
+          "path": "dist/components/Typewriter/Typewriter.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/api/perfumes.js",
           "kind": "import-statement"
         }
       ]
     },
-    "_snowpack/pkg/svelte.js": {
-      "bytes": 59,
+    "dist/pages/Home.svelte.js": {
+      "bytes": 999,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-3f7056c0.js",
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Welcome/Welcome.svelte.js",
           "kind": "import-statement"
         }
       ]
@@ -210,8 +405,8 @@
         }
       ]
     },
-    "dist/components/Title.component.svelte.js": {
-      "bytes": 881,
+    "dist/components/Title/Title.svelte.js": {
+      "bytes": 860,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -219,8 +414,8 @@
         }
       ]
     },
-    "dist/components/MBTI.component.svelte.js": {
-      "bytes": 1023,
+    "dist/components/MBTI/MBTI.svelte.js": {
+      "bytes": 1001,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -228,8 +423,8 @@
         }
       ]
     },
-    "dist/components/Result.component.svelte.js": {
-      "bytes": 3361,
+    "dist/components/Results/Result.svelte.js": {
+      "bytes": 3341,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -244,43 +439,30 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/Title.component.svelte.js",
+          "path": "dist/components/Title/Title.svelte.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/MBTI.component.svelte.js",
+          "path": "dist/components/MBTI/MBTI.svelte.js",
           "kind": "import-statement"
         }
       ]
     },
-    "dist/pages/Result.page.svelte.js": {
-      "bytes": 1012,
+    "dist/pages/Result.svelte.js": {
+      "bytes": 2084,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/Result.component.svelte.js",
+          "path": "dist/components/Results/Result.svelte.js",
           "kind": "import-statement"
         }
       ]
     },
-    "dist/components/Quiz.component.svelte.js": {
-      "bytes": 3804,
-      "imports": [
-        {
-          "path": "_snowpack/pkg/svelte/internal.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/stores/index.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "dist/pages/Quiz.page.svelte.js": {
-      "bytes": 2127,
+    "dist/components/Quiz/Quiz.svelte.js": {
+      "bytes": 3785,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -289,9 +471,22 @@
         {
           "path": "dist/stores/index.js",
           "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/Quiz.svelte.js": {
+      "bytes": 2111,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
         },
         {
-          "path": "dist/components/Quiz.component.svelte.js",
+          "path": "dist/stores/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Quiz/Quiz.svelte.js",
           "kind": "import-statement"
         },
         {
@@ -317,8 +512,8 @@
         }
       ]
     },
-    "dist/App.svelte.js": {
-      "bytes": 5607,
+    "dist/components/App/App.svelte.js": {
+      "bytes": 5637,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -329,15 +524,15 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/pages/Home.page.svelte.js",
+          "path": "dist/pages/Home.svelte.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/pages/Result.page.svelte.js",
+          "path": "dist/pages/Result.svelte.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/pages/Quiz.page.svelte.js",
+          "path": "dist/pages/Quiz.svelte.js",
           "kind": "import-statement"
         },
         {
@@ -351,14 +546,14 @@
       ]
     },
     "dist/index.js": {
-      "bytes": 369,
+      "bytes": 384,
       "imports": [
         {
           "path": "_snowpack/env.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/App.svelte.js",
+          "path": "dist/components/App/App.svelte.js",
           "kind": "import-statement"
         }
       ]
@@ -371,11 +566,23 @@
         "default"
       ],
       "inputs": {
-        "_snowpack/env.js": {
-          "bytesInOutput": 98
+        "dist/components/Typewriter/helpers/sleep.js": {
+          "bytesInOutput": 87
         },
-        "_snowpack/pkg/common/index-3f7056c0.js": {
-          "bytesInOutput": 3346
+        "dist/components/Typewriter/modes/loopTypewriter.js": {
+          "bytesInOutput": 296
+        },
+        "dist/components/Typewriter/helpers/getLongestTextElement.js": {
+          "bytesInOutput": 135
+        },
+        "dist/components/Typewriter/modes/typewriter.js": {
+          "bytesInOutput": 323
+        },
+        "_snowpack/env.js": {
+          "bytesInOutput": 97
+        },
+        "_snowpack/pkg/common/index-83b2e6bf.js": {
+          "bytesInOutput": 5015
         },
         "_snowpack/pkg/svelte/internal.js": {
           "bytesInOutput": 0
@@ -390,22 +597,67 @@
           "bytesInOutput": 0
         },
         "dist/constants/quizzes.json.proxy.js": {
-          "bytesInOutput": 4828
+          "bytesInOutput": 4829
         },
         "dist/stores/pagination.js": {
-          "bytesInOutput": 47
+          "bytesInOutput": 49
         },
         "dist/stores/nav.js": {
           "bytesInOutput": 33
         },
-        "dist/components/Welcome.component.svelte.js": {
-          "bytesInOutput": 240
-        },
-        "dist/pages/Home.page.svelte.js": {
-          "bytesInOutput": 248
+        "dist/components/Typewriter/Typewriter.svelte.css": {
+          "bytesInOutput": 0
         },
         "_snowpack/pkg/svelte.js": {
           "bytesInOutput": 0
+        },
+        "dist/components/Typewriter/helpers/hasSingleTextNode.js": {
+          "bytesInOutput": 64
+        },
+        "dist/components/Typewriter/helpers/createElement.js": {
+          "bytesInOutput": 73
+        },
+        "dist/components/Typewriter/helpers/getElements.js": {
+          "bytesInOutput": 240
+        },
+        "dist/components/Typewriter/helpers/typingInterval.js": {
+          "bytesInOutput": 79
+        },
+        "dist/components/Typewriter/helpers/rng.js": {
+          "bytesInOutput": 48
+        },
+        "dist/components/Typewriter/helpers/writeEffect.js": {
+          "bytesInOutput": 235
+        },
+        "dist/components/Typewriter/helpers/unwriteEffect.js": {
+          "bytesInOutput": 241
+        },
+        "dist/components/Typewriter/helpers/getRandomElement.js": {
+          "bytesInOutput": 179
+        },
+        "dist/components/Typewriter/helpers/onAnimationEnd.js": {
+          "bytesInOutput": 189
+        },
+        "dist/components/Typewriter/modes/index.js": {
+          "bytesInOutput": 270
+        },
+        "dist/components/Typewriter/Typewriter.svelte.js": {
+          "bytesInOutput": 1584
+        },
+        "_snowpack/pkg/axios.js": {
+          "bytesInOutput": 14846
+        },
+        "dist/utils/HttpClient.js": {
+          "bytesInOutput": 347
+        },
+        "dist/api/perfumes.js": {
+          "bytesInOutput": 597
+        },
+        "dist/components/Welcome/Welcome.svelte.js": {
+          "bytesInOutput": 733
+        },
+        "dist/pages/Home.svelte.js": {
+          "bytesInOutput": 248
         },
         "_snowpack/pkg/@beyonk/async-script-loader.js": {
           "bytesInOutput": 318
@@ -414,7 +666,7 @@
           "bytesInOutput": 13
         },
         "dist/utils/GoogleAnalytics/GoogleAnalytics.svelte.js": {
-          "bytesInOutput": 616
+          "bytesInOutput": 617
         },
         "dist/utils/index.js": {
           "bytesInOutput": 0
@@ -423,7 +675,7 @@
           "bytesInOutput": 947
         },
         "dist/utils/PerfumeCalc/PerfumeCalc.js": {
-          "bytesInOutput": 287
+          "bytesInOutput": 288
         },
         "dist/constants/mbtis.json.proxy.js": {
           "bytesInOutput": 22394
@@ -434,44 +686,47 @@
         "dist/constants/titles.json.proxy.js": {
           "bytesInOutput": 1824
         },
-        "dist/components/Title.component.svelte.js": {
+        "dist/components/Title/Title.svelte.js": {
           "bytesInOutput": 272
         },
-        "dist/components/MBTI.component.svelte.js": {
+        "dist/components/MBTI/MBTI.svelte.js": {
           "bytesInOutput": 346
         },
-        "dist/components/Result.component.svelte.js": {
-          "bytesInOutput": 953
+        "dist/components/Results/Result.svelte.js": {
+          "bytesInOutput": 956
         },
-        "dist/pages/Result.page.svelte.js": {
-          "bytesInOutput": 248
+        "dist/pages/Result.svelte.js": {
+          "bytesInOutput": 618
         },
-        "dist/components/Quiz.component.svelte.js": {
-          "bytesInOutput": 1160
+        "dist/components/Quiz/Quiz.svelte.js": {
+          "bytesInOutput": 1163
         },
-        "dist/pages/Quiz.page.svelte.js": {
-          "bytesInOutput": 528
+        "dist/pages/Quiz.svelte.js": {
+          "bytesInOutput": 531
         },
         "dist/styles/TailwindStyles.svelte.css": {
           "bytesInOutput": 0
         },
-        "dist/App.svelte.js": {
+        "dist/components/App/App.svelte.js": {
           "bytesInOutput": 1499
         },
         "dist/index.js": {
           "bytesInOutput": 138
         }
       },
-      "bytes": 41872
+      "bytes": 64765
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
       "inputs": {
         "dist/styles/TailwindStyles.svelte.css": {
           "bytesInOutput": 3593
+        },
+        "dist/components/Typewriter/Typewriter.svelte.css": {
+          "bytesInOutput": 548
         }
       },
-      "bytes": 3594
+      "bytes": 4142
     }
   }
 }
