@@ -1,18 +1,13 @@
 <script lang="typescript">
-  import { nav } from './stores'
-	import Home from "./pages/Home.page.svelte";
-	import Result from "./pages/Result.page.svelte";
-	import Quiz from "./pages/Quiz.page.svelte";
+  import { nav } from '@src/stores'
+	import Home from "@src/pages/Home.svelte";
+	import Result from "@src/pages/Result.svelte";
+	import Quiz from "@src/pages/Quiz.svelte";
 
   import { GoogleAnalytics } from "@src/utils";
 
-  import "./styles/TailwindStyles.svelte";
-  
+  import "@src/styles/TailwindStyles.svelte";
 </script>
-
-<style>
-  
-</style>
 
 <GoogleAnalytics />
 <header>

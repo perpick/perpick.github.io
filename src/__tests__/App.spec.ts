@@ -1,6 +1,6 @@
 import {render} from '@testing-library/svelte';
 import {expect} from 'chai';
-import App from '@src/App.svelte';
+import App from '@src/components/App/App.svelte';
 
 describe('<App>', () => {
   it('renders learn svelte link', () => {

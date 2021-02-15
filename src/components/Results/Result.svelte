@@ -2,8 +2,8 @@
   import { users } from "@src/stores";
   import { PC } from '@src/utils'
 
-  import Title from './Title.component.svelte'
-  import MBTI from './MBTI.component.svelte'
+  import Title from '../Title/Title.svelte'
+  import MBTI from '../MBTI/MBTI.svelte'
 
   const descriptions = PC.getDescription($users.mbti)
     

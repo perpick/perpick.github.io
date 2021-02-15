@@ -1,5 +1,5 @@
 <script lang="typescript">
-  import Welcome from '@src/components/Welcome.component.svelte'
+  import Welcome from '@src/components/Welcome/Welcome.svelte'
 </script>
   
 <style>
