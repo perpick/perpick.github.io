@@ -5,10 +5,10 @@
       "imports": []
     },
     "dist/components/App/App.svelte.css": {
-      "bytes": 263,
+      "bytes": 819,
       "imports": []
     },
-    "_snowpack/pkg/common/index-fb1be853.js": {
+    "_snowpack/pkg/common/index-ce6d48c2.js": {
       "bytes": 25684,
       "imports": []
     },
@@ -16,7 +16,7 @@
       "bytes": 769,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-fb1be853.js",
+          "path": "_snowpack/pkg/common/index-ce6d48c2.js",
           "kind": "import-statement"
         }
       ]
@@ -25,7 +25,7 @@
       "bytes": 1785,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-fb1be853.js",
+          "path": "_snowpack/pkg/common/index-ce6d48c2.js",
           "kind": "import-statement"
         }
       ]
@@ -94,7 +94,7 @@
       "bytes": 251,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-fb1be853.js",
+          "path": "_snowpack/pkg/common/index-ce6d48c2.js",
           "kind": "import-statement"
         }
       ]
@@ -379,23 +379,43 @@
         }
       ]
     },
+    "dist/components/Title/Title.svelte.css": {
+      "bytes": 124,
+      "imports": []
+    },
     "dist/components/Title/Title.svelte.js": {
-      "bytes": 1959,
+      "bytes": 2049,
       "imports": [
+        {
+          "path": "dist/components/Title/Title.svelte.css",
+          "kind": "import-statement"
+        },
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
         }
       ]
     },
+    "dist/components/MBTI/MBTI.svelte.css": {
+      "bytes": 124,
+      "imports": []
+    },
     "dist/components/MBTI/MBTI.svelte.js": {
-      "bytes": 1340,
+      "bytes": 1814,
       "imports": [
+        {
+          "path": "dist/components/MBTI/MBTI.svelte.css",
+          "kind": "import-statement"
+        },
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
         }
       ]
+    },
+    "dist/components/Perfumes/Perfumes.svelte.css": {
+      "bytes": 66,
+      "imports": []
     },
     "dist/components/Image/IntersectionObserver.svelte.css": {
       "bytes": 42,
@@ -418,9 +438,21 @@
         }
       ]
     },
+    "dist/components/Commons/Modal/Content.svelte.css": {
+      "bytes": 65,
+      "imports": []
+    },
+    "dist/components/Commons/Modal/PopupLong.svelte.css": {
+      "bytes": 65,
+      "imports": []
+    },
     "dist/components/Commons/Modal/PopupLong.svelte.js": {
-      "bytes": 2182,
+      "bytes": 2950,
       "imports": [
+        {
+          "path": "dist/components/Commons/Modal/PopupLong.svelte.css",
+          "kind": "import-statement"
+        },
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
@@ -428,8 +460,12 @@
       ]
     },
     "dist/components/Commons/Modal/Content.svelte.js": {
-      "bytes": 2116,
+      "bytes": 2222,
       "imports": [
+        {
+          "path": "dist/components/Commons/Modal/Content.svelte.css",
+          "kind": "import-statement"
+        },
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
@@ -452,7 +488,7 @@
       "bytes": 313,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-fb1be853.js",
+          "path": "_snowpack/pkg/common/index-ce6d48c2.js",
           "kind": "import-statement"
         }
       ]
@@ -529,8 +565,12 @@
       ]
     },
     "dist/components/Perfumes/Perfumes.svelte.js": {
-      "bytes": 2661,
+      "bytes": 3108,
       "imports": [
+        {
+          "path": "dist/components/Perfumes/Perfumes.svelte.css",
+          "kind": "import-statement"
+        },
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
@@ -542,7 +582,7 @@
       ]
     },
     "dist/pages/Results.svelte.js": {
-      "bytes": 7524,
+      "bytes": 7598,
       "imports": [
         {
           "path": "dist/pages/Results.svelte.css",
@@ -583,7 +623,7 @@
       "imports": []
     },
     "dist/components/Quiz/Quiz.svelte.js": {
-      "bytes": 5237,
+      "bytes": 5239,
       "imports": [
         {
           "path": "dist/components/Quiz/Quiz.svelte.css",
@@ -642,7 +682,7 @@
       ]
     },
     "dist/styles/TailwindStyles.svelte.css": {
-      "bytes": 9525,
+      "bytes": 10016,
       "imports": []
     },
     "dist/styles/TailwindStyles.svelte.js": {
@@ -659,7 +699,7 @@
       ]
     },
     "dist/components/App/App.svelte.js": {
-      "bytes": 7479,
+      "bytes": 7494,
       "imports": [
         {
           "path": "dist/components/App/App.svelte.css",
@@ -738,7 +778,7 @@
         "dist/components/App/App.svelte.css": {
           "bytesInOutput": 0
         },
-        "_snowpack/pkg/common/index-fb1be853.js": {
+        "_snowpack/pkg/common/index-ce6d48c2.js": {
           "bytesInOutput": 7733
         },
         "_snowpack/pkg/svelte/internal.js": {
@@ -843,11 +883,20 @@
         "dist/api/perfumes.js": {
           "bytesInOutput": 273
         },
+        "dist/components/Title/Title.svelte.css": {
+          "bytesInOutput": 0
+        },
         "dist/components/Title/Title.svelte.js": {
-          "bytesInOutput": 670
+          "bytesInOutput": 736
+        },
+        "dist/components/MBTI/MBTI.svelte.css": {
+          "bytesInOutput": 0
         },
         "dist/components/MBTI/MBTI.svelte.js": {
-          "bytesInOutput": 461
+          "bytesInOutput": 656
+        },
+        "dist/components/Perfumes/Perfumes.svelte.css": {
+          "bytesInOutput": 0
         },
         "dist/components/Image/IntersectionObserver.svelte.css": {
           "bytesInOutput": 0
@@ -855,11 +904,17 @@
         "dist/components/Image/IntersectionObserver.svelte.js": {
           "bytesInOutput": 1335
         },
+        "dist/components/Commons/Modal/Content.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/Commons/Modal/PopupLong.svelte.css": {
+          "bytesInOutput": 0
+        },
         "dist/components/Commons/Modal/PopupLong.svelte.js": {
-          "bytesInOutput": 841
+          "bytesInOutput": 1231
         },
         "dist/components/Commons/Modal/Content.svelte.js": {
-          "bytesInOutput": 819
+          "bytesInOutput": 894
         },
         "dist/components/Commons/Modal/Modal.svelte.css": {
           "bytesInOutput": 0
@@ -880,16 +935,16 @@
           "bytesInOutput": 1813
         },
         "dist/components/Perfumes/Perfumes.svelte.js": {
-          "bytesInOutput": 853
+          "bytesInOutput": 1141
         },
         "dist/pages/Results.svelte.js": {
-          "bytesInOutput": 2701
+          "bytesInOutput": 2719
         },
         "dist/components/Quiz/Quiz.svelte.css": {
           "bytesInOutput": 0
         },
         "dist/components/Quiz/Quiz.svelte.js": {
-          "bytesInOutput": 1731
+          "bytesInOutput": 1733
         },
         "dist/pages/Quizzes.svelte.js": {
           "bytesInOutput": 2937
@@ -904,19 +959,19 @@
           "bytesInOutput": 0
         },
         "dist/components/App/App.svelte.js": {
-          "bytesInOutput": 2173
+          "bytesInOutput": 2188
         },
         "dist/index.js": {
           "bytesInOutput": 139
         }
       },
-      "bytes": 85251
+      "bytes": 86300
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
       "inputs": {
         "dist/components/App/App.svelte.css": {
-          "bytesInOutput": 261
+          "bytesInOutput": 811
         },
         "dist/components/Image/RoundedImage.svelte.css": {
           "bytesInOutput": 100
@@ -925,16 +980,28 @@
           "bytesInOutput": 56
         },
         "dist/styles/TailwindStyles.svelte.css": {
-          "bytesInOutput": 9285
+          "bytesInOutput": 9763
+        },
+        "dist/components/MBTI/MBTI.svelte.css": {
+          "bytesInOutput": 124
+        },
+        "dist/components/Perfumes/Perfumes.svelte.css": {
+          "bytesInOutput": 66
         },
         "dist/components/Quiz/Quiz.svelte.css": {
           "bytesInOutput": 58
+        },
+        "dist/components/Title/Title.svelte.css": {
+          "bytesInOutput": 124
         },
         "dist/components/Welcome/Welcome.svelte.css": {
           "bytesInOutput": 36
         },
         "dist/components/Typewriter/Typewriter.svelte.css": {
           "bytesInOutput": 548
+        },
+        "dist/components/Commons/Modal/Content.svelte.css": {
+          "bytesInOutput": 65
         },
         "dist/components/Commons/Modal/Modal.svelte.css": {
           "bytesInOutput": 1671
@@ -944,9 +1011,12 @@
         },
         "dist/components/Image/IntersectionObserver.svelte.css": {
           "bytesInOutput": 42
+        },
+        "dist/components/Commons/Modal/PopupLong.svelte.css": {
+          "bytesInOutput": 65
         }
       },
-      "bytes": 12158
+      "bytes": 13630
     }
   }
 }
