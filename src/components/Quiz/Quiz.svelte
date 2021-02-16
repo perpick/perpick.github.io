@@ -19,7 +19,7 @@
 
 <style>
 	* {
-		font-family: NotoSans;
+		font-family: Jal_Onuel;
     word-break: keep-all;
 	}
 </style>
@@ -30,7 +30,7 @@
     <div class="flex flex-wrap">
       {#each quiz.selectors as selector}
       <div class="w-full m-4 " on:click={() => handleClickSelct(selector.data)}>
-        <button class={`w-full p-4 bg-white hover:bg-indigo-200 border-indigo-200 border-2 rounded text-sm`}>{selector.title}</button>
+        <button class={`w-full p-4 bg-white hover:bg-pb-400 border-pb-400 border-2 rounded text-lg`}>{selector.title}</button>
       </div>
       {/each}
     </div>
