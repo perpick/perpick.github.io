@@ -6,8 +6,6 @@
   import IntersectionObserver from '@src/components/Image/IntersectionObserver.svelte'
   import RoundedImage from '@src/components/Image/RoundedImage.svelte'
   
-  import { GoogleAnalytics } from "@src/utils";
-
   import "@src/styles/TailwindStyles.svelte";
 </script>
 
@@ -24,7 +22,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </svelte:head>
-<GoogleAnalytics />
 <div class="w-full max-w-xs wrap">
   <header class="m-4" >
     <IntersectionObserver>
