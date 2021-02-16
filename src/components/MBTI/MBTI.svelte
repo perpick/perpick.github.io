@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
   export let descriptions: {
     mbti: string;
     sub_title: string;

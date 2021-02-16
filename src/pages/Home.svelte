@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
   import Welcome from '@src/components/Welcome/Welcome.svelte'
   import config from "@src/utils/config"
 

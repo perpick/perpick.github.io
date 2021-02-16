@@ -1,6 +1,8 @@
-<script lang="typescript">
+<script lang="ts">
 	import { nav } from '@src/stores'
     import Typewriter from '@src/components/Typewriter/Typewriter.svelte'
+	import TooltipBtn from '@src/components/Commons/TooltipBtn.svelte'
+	// import { tooltip } from '@src/utils/tooltip'
 	
 	const handleClickNext = () => {
 		$nav.current = 'quizzes'

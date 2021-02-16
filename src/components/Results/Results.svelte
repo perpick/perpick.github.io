@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
   import { users } from "@src/stores";
   import { PC } from '@src/utils'
   import API from '@src/api/perfumes'

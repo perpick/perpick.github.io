@@ -1093,10 +1093,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@okrad/svelte-progressbar@^1.11.1":
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/@okrad/svelte-progressbar/-/svelte-progressbar-1.11.1.tgz#1f55ea1f35fb4e76c6f0244bd5367436ef8912fc"
-  integrity sha512-UDqEcUXuqJo0qvou6H4EK5FLx3wQTqYkhAJAyetLi3JomhuEkjMJ+kwogHVz2FodQMkc5XfjMPJPnj29+QLQyA==
+"@popperjs/core@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.6.0.tgz#f022195afdfc942e088ee2101285a1d31c7d727f"
+  integrity sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"

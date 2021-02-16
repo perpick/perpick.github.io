@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
   import { nav } from '@src/stores'
 	import Home from "@src/pages/Home.svelte";
 	import Result from "@src/pages/Results.svelte";

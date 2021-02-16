@@ -9,6 +9,7 @@ const Apis = {
           baseURL: config.esUrl,
           method: "POST",
           url: "/kor_perfumes/_search",
+          withCredentials: true,
           auth: {
             username: config.esUsername,
             password: config.esPassword,

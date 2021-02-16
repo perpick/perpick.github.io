@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
   import { users, pagination, nav } from "@src/stores";
 
   export let quiz: {
