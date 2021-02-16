@@ -21,7 +21,25 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+  }
+  @font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 </style>
 
 <svelte:head>
@@ -29,7 +47,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </svelte:head>
 <div class="w-full max-w-xs wrap">
-  <header class="m-4" on:click={() => { $nav.current = 'home' }}>
+  <header class="m-4  cursor-pointer" on:click={() => { $nav.current = 'home' }}>
     <IntersectionObserver>
       <RoundedImage src="/banner.png" alt="logo"/>
     </IntersectionObserver>

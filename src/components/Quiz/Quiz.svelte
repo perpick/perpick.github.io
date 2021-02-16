@@ -30,7 +30,7 @@
     <div class="flex flex-wrap">
       {#each quiz.selectors as selector}
       <div class="w-full m-4 " on:click={() => handleClickSelct(selector.data)}>
-        <button class={`w-full p-4 bg-white hover:bg-pb-400 border-pb-400 border-2 rounded text-lg`}>{selector.title}</button>
+        <button class={`w-full p-4 bg-white hover:bg-pb-400 border-pb-400 border-2 rounded text-base`}>{selector.title}</button>
       </div>
       {/each}
     </div>

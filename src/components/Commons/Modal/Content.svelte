@@ -12,12 +12,16 @@
 </script>
 
 <style>
+    * {
+      font-family: HangeulNuri-Bold;
+      word-break: keep-all;
+    }
 </style>
 
 <section class="p-1">
     <button
-    type="button"
-    style="transition: all .15s ease"
-    class="bg-pink-400 text-white active:bg-pink-500 hover:bg-pink-500 font-bold uppercase text-sm px-4 py-4 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" 
-     on:click={showPopupLong}>{ title }</button>
+        type="button"
+        style="transition: all .15s ease"
+        class="bg-white text-pb-600 border-pb-600 border-2 active:bg-pb-600 active:text-white hover:bg-pb-600 hover:text-white font-bold uppercase text-sm px-4 py-2 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" 
+        on:click={showPopupLong}>{ title }</button>
 </section>
