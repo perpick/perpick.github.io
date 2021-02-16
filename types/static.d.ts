@@ -57,4 +57,3 @@ declare module '*.png' {
 }
 
 /* CUSTOM: ADD YOUR OWN HERE */
-declare module '@beyonk/async-script-loader';

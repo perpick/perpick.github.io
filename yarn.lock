@@ -863,18 +863,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@beyonk/async-script-loader@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@beyonk/async-script-loader/-/async-script-loader-2.0.0.tgz#d8867e5cdf6ecd0e8cc06da06a8a5fb2a405f59f"
-  integrity sha512-OAhcycCXwSVsSMjJGAENz0qtrALW943IRbIGZRnJZBA2aO/BDdWuHY1gF/9l+dZITAEu/wAkwhMqtXNeqmW1rw==
-
-"@beyonk/svelte-google-analytics@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@beyonk/svelte-google-analytics/-/svelte-google-analytics-2.0.0.tgz#e07637ddb014cc2fcdf753ff487e3be7bacb8dc9"
-  integrity sha512-bNF1oKKJcNtNqsI62FbzOHdPmvM0U7oBEIAh2EehN+izfPeFIx7FAJMCEIhti9cIAqowsFHUJ4Fbs4Is+9AS0Q==
-  dependencies:
-    "@beyonk/async-script-loader" "^2.0.0"
-
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"

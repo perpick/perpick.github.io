@@ -1,5 +1,5 @@
 import Request from "@src/utils/HttpClient"
-import config from "@src/utils/config"
+import config from "@src/config"
 import type { Filter } from '@src/models'
 import type { AxiosPromise } from "axios"
 
