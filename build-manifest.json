@@ -417,7 +417,7 @@
       ]
     },
     "dist/api/perfumes.js": {
-      "bytes": 815,
+      "bytes": 844,
       "imports": [
         {
           "path": "_snowpack/env.js",
@@ -853,7 +853,7 @@
           "bytesInOutput": 315
         },
         "dist/api/perfumes.js": {
-          "bytesInOutput": 321
+          "bytesInOutput": 340
         },
         "dist/components/Title/Title.svelte.js": {
           "bytesInOutput": 670
@@ -913,7 +913,7 @@
           "bytesInOutput": 138
         }
       },
-      "bytes": 72993
+      "bytes": 73012
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
