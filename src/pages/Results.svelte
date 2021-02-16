@@ -7,7 +7,6 @@
     import MBTI from '@src/components/MBTI/MBTI.svelte'
     import Perfumes from '@src/components/Perfumes/Perfumes.svelte'
     import type { Filter } from "@src/models";
-    // import Gender from '@src/components/Gender/Gender.svelte'
     
     const getTagInStrArrLen = (a: string[], t: string) => a.filter(s => s === t).length
   
@@ -24,18 +23,14 @@
     const PL = getTagInStrArrLen($users.selects, 'P')
     const JnP= JL > PL ? 'J' : 'P'
     const mbti = `${EnI}${SnN}${TnF}${JnP}`
-  
     const descriptions = PC.getDescription(mbti)
     const tags =PC.getTagsWithAttr(mbti)
   
     const gender = PC.getGender($users.selects.find(select => select === 'MALE' || select === 'FEMALE'))
-    const title = PC.getTitle($users.selects.find(select => select === 'sunrise' || select === 'sunset'))
+    const title = PC.getTitle($users.selects.find(select => select === 'sunrise' || select === 'sunset' || select === 'city' || select === 'nature'))
   
-    const getPerfumes = async ({matchStr, filter}: { matchStr: string, filter: Filter}, ) => {
-    //   const perfumes = await API.getPerfumes<any>({ matchStr, filter })
-  
-      return API.getPerfumes<any>({ matchStr, filter })
-    }
+    const getPerfumes = async ({matchStr, filter}: { matchStr: string, filter: Filter}, ) => 
+        API.getPerfumes<any>({ matchStr, filter })
 </script>
 
 <style>
