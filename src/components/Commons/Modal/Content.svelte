@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import { getContext } from 'svelte';
     import PopupLong from './PopupLong.svelte';
 
-    export let title, descHead,descBody
+    export let title: string, descHead: string,descBody: string
   
     const { open } = getContext('simple-modal');
 
@@ -18,6 +18,6 @@
     <button
     type="button"
     style="transition: all .15s ease"
-    class="bg-indigo-400 text-white active:bg-indigo-500 hover:bg-indigo-500 font-bold uppercase text-sm px-4 py-4 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" 
+    class="bg-pink-400 text-white active:bg-pink-500 hover:bg-pink-500 font-bold uppercase text-sm px-4 py-4 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" 
      on:click={showPopupLong}>{ title }</button>
 </section>

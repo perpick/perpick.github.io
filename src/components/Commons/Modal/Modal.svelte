@@ -1,4 +1,5 @@
 <script>
+  // TODO: js to ts
 	// v0.8.1
   import * as svelte from 'svelte';
   import { fade } from 'svelte/transition';

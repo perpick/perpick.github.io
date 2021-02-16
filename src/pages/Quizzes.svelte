@@ -9,10 +9,22 @@
 </style>
 
 <div class="relative pt-1">
-    <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
-      <div style={`width:${Math.ceil(($pagination.page / ($pagination.max + 1)) *100)}%`} class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
+  <div class="flex mb-2 items-center justify-between">
+    <div>
+      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200">
+        나에게 꼭 맞는 향수 찾아가는 중
+      </span>
+    </div>
+    <div class="text-right">
+      <span class="text-xs font-semibold inline-block text-pink-600">
+        {Math.ceil(($pagination.page / ($pagination.max + 1)) *100)}%
+      </span>
     </div>
   </div>
+  <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+    <div style={`width:${Math.ceil(($pagination.page / ($pagination.max + 1)) *100)}%`} class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
+  </div>
+</div>
 {#each quizzes as quiz}
     <Quiz quiz={quiz} />
 {/each}

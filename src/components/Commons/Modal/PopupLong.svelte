@@ -1,5 +1,5 @@
-<script>
-    export let title, descHead, descBody;
+<script lang="ts">
+    export let descHead: string, descBody: string;
   </script>
   
   <style>
