@@ -5,7 +5,8 @@
 	import Quizzes from "@src/pages/Quizzes.svelte";
   import IntersectionObserver from '@src/components/Image/IntersectionObserver.svelte'
   import RoundedImage from '@src/components/Image/RoundedImage.svelte'
-  
+  import MailChimp from '@src/components/MailChimp.svelte'
+
   import "@src/styles/TailwindStyles.svelte";
 </script>
 
@@ -62,3 +63,6 @@
     <Result />
   {/if}
 </div>
+<footer class="pb-24">
+  <MailChimp />
+</footer>

@@ -44,7 +44,7 @@
     }
 </style>
 
-<div class="pt-4 pb-24 bg-white">
+<div class="pt-4 bg-white mb-4">
     {#if title && gender && tags && descriptions }
         {#await getPerfumes({ matchStr: [...title.tags, ...tags].join(" "), filter: { gender: gender.tags } })}
         <link rel="stylesheet" href="https://pagecdn.io/lib/font-awesome/5.10.0-11/css/all.min.css" integrity="sha256-p9TTWD+813MlLaxMXMbTA7wN/ArzGyW/L7c5+KkjOkM=" crossorigin="anonymous">

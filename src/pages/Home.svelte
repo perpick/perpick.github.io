@@ -5,8 +5,5 @@
   $pagination.page = 1
   $users.selects = []
 </script>
-  
-<style>
-</style>
-  
+
 <Welcome />
