@@ -253,7 +253,7 @@
       ]
     },
     "dist/components/Welcome/Welcome.svelte.js": {
-      "bytes": 2740,
+      "bytes": 2820,
       "imports": [
         {
           "path": "dist/components/Welcome/Welcome.svelte.css",
@@ -582,7 +582,7 @@
       ]
     },
     "dist/pages/Results.svelte.js": {
-      "bytes": 7598,
+      "bytes": 7597,
       "imports": [
         {
           "path": "dist/pages/Results.svelte.css",
@@ -681,8 +681,25 @@
         }
       ]
     },
+    "dist/components/MailChimp.svelte.css": {
+      "bytes": 91,
+      "imports": []
+    },
+    "dist/components/MailChimp.svelte.js": {
+      "bytes": 1920,
+      "imports": [
+        {
+          "path": "dist/components/MailChimp.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/styles/TailwindStyles.svelte.css": {
-      "bytes": 10016,
+      "bytes": 10032,
       "imports": []
     },
     "dist/styles/TailwindStyles.svelte.js": {
@@ -699,7 +716,7 @@
       ]
     },
     "dist/components/App/App.svelte.js": {
-      "bytes": 7494,
+      "bytes": 8044,
       "imports": [
         {
           "path": "dist/components/App/App.svelte.css",
@@ -731,6 +748,10 @@
         },
         {
           "path": "dist/components/Image/RoundedImage.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/MailChimp.svelte.js",
           "kind": "import-statement"
         },
         {
@@ -845,7 +866,7 @@
           "bytesInOutput": 1587
         },
         "dist/components/Welcome/Welcome.svelte.js": {
-          "bytesInOutput": 996
+          "bytesInOutput": 1045
         },
         "dist/pages/Home.svelte.js": {
           "bytesInOutput": 361
@@ -938,7 +959,7 @@
           "bytesInOutput": 1141
         },
         "dist/pages/Results.svelte.js": {
-          "bytesInOutput": 2719
+          "bytesInOutput": 2718
         },
         "dist/components/Quiz/Quiz.svelte.css": {
           "bytesInOutput": 0
@@ -955,17 +976,23 @@
         "dist/components/Image/RoundedImage.svelte.js": {
           "bytesInOutput": 613
         },
+        "dist/components/MailChimp.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/MailChimp.svelte.js": {
+          "bytesInOutput": 1259
+        },
         "dist/styles/TailwindStyles.svelte.css": {
           "bytesInOutput": 0
         },
         "dist/components/App/App.svelte.js": {
-          "bytesInOutput": 2188
+          "bytesInOutput": 2355
         },
         "dist/index.js": {
           "bytesInOutput": 139
         }
       },
-      "bytes": 86300
+      "bytes": 87774
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
@@ -976,11 +1003,14 @@
         "dist/components/Image/RoundedImage.svelte.css": {
           "bytesInOutput": 100
         },
+        "dist/components/MailChimp.svelte.css": {
+          "bytesInOutput": 91
+        },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 56
         },
         "dist/styles/TailwindStyles.svelte.css": {
-          "bytesInOutput": 9763
+          "bytesInOutput": 9777
         },
         "dist/components/MBTI/MBTI.svelte.css": {
           "bytesInOutput": 124
@@ -1016,7 +1046,7 @@
           "bytesInOutput": 65
         }
       },
-      "bytes": 13630
+      "bytes": 13735
     }
   }
 }
