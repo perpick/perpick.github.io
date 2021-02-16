@@ -671,7 +671,7 @@
       ]
     },
     "dist/components/App/App.svelte.js": {
-      "bytes": 7646,
+      "bytes": 7175,
       "imports": [
         {
           "path": "dist/components/App/App.svelte.css",
@@ -703,10 +703,6 @@
         },
         {
           "path": "dist/components/Image/RoundedImage.svelte.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "dist/utils/index.js",
           "kind": "import-statement"
         },
         {
@@ -755,7 +751,7 @@
           "bytesInOutput": 0
         },
         "_snowpack/pkg/common/index-18a732ab.js": {
-          "bytesInOutput": 5077
+          "bytesInOutput": 5069
         },
         "_snowpack/pkg/svelte/internal.js": {
           "bytesInOutput": 0
@@ -832,14 +828,8 @@
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 0
         },
-        "_snowpack/pkg/@beyonk/async-script-loader.js": {
-          "bytesInOutput": 318
-        },
         "dist/utils/GoogleAnalytics/store.js": {
           "bytesInOutput": 13
-        },
-        "dist/utils/GoogleAnalytics/GoogleAnalytics.svelte.js": {
-          "bytesInOutput": 572
         },
         "dist/utils/index.js": {
           "bytesInOutput": 0
@@ -848,7 +838,7 @@
           "bytesInOutput": 947
         },
         "dist/utils/PerfumeCalc/PerfumeCalc.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 342
         },
         "dist/constants/mbtis.json.proxy.js": {
           "bytesInOutput": 22394
@@ -881,7 +871,7 @@
           "bytesInOutput": 0
         },
         "dist/components/Image/IntersectionObserver.svelte.js": {
-          "bytesInOutput": 1334
+          "bytesInOutput": 1336
         },
         "dist/components/Image/Image.svelte.css": {
           "bytesInOutput": 0
@@ -896,7 +886,7 @@
           "bytesInOutput": 853
         },
         "dist/pages/Results.svelte.js": {
-          "bytesInOutput": 2094
+          "bytesInOutput": 2095
         },
         "dist/components/Quiz/Quiz.svelte.css": {
           "bytesInOutput": 0
@@ -917,13 +907,13 @@
           "bytesInOutput": 0
         },
         "dist/components/App/App.svelte.js": {
-          "bytesInOutput": 2212
+          "bytesInOutput": 2101
         },
         "dist/index.js": {
           "bytesInOutput": 139
         }
       },
-      "bytes": 72912
+      "bytes": 71904
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
