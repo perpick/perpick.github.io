@@ -23,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </svelte:head>
 <div class="w-full max-w-xs wrap">
-  <header class="m-4" >
+  <header class="m-4" on:click={() => { $nav.current = 'home' }}>
     <IntersectionObserver>
       <RoundedImage src="/banner.png" alt="logo"/>
     </IntersectionObserver>

@@ -1,8 +1,9 @@
 <script lang="ts">
+  import { users, pagination } from '@src/stores'
   import Welcome from '@src/components/Welcome/Welcome.svelte'
-  import config from "@src/config"
-
-  console.log(config)
+  
+  $pagination.page = 1
+  $users.selects = []
 </script>
   
 <style>
