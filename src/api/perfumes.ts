@@ -9,6 +9,7 @@ const Apis = {
             baseURL: SNOWPACK_PUBLIC_ES_URL,
             method: "POST",
             url: "/kor_perfumes/_search",
+	withCredentials: true,
             auth: {
               username: SNOWPACK_PUBLIC_ES_USERNAME,
               password: SNOWPACK_PUBLIC_ES_PASSWORD,
