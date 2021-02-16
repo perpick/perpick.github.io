@@ -1,4 +1,6 @@
 <script lang="ts">
+    import type { AxiosPromise, AxiosResponse } from "axios";
+
     import { users } from "@src/stores";
     import { PC } from '@src/utils'
     import API from '@src/api/perfumes'
@@ -28,9 +30,11 @@
   
     const gender = PC.getGender($users.selects.find(select => select === 'MALE' || select === 'FEMALE'))
     const title = PC.getTitle($users.selects.find(select => select === 'sunrise' || select === 'sunset' || select === 'city' || select === 'nature'))
-  
-    const getPerfumes = async ({matchStr, filter}: { matchStr: string, filter: Filter}, ) => 
-        API.getPerfumes<any>({ matchStr, filter })
+
+    const getPerfumes = async ({matchStr, filter}: { matchStr: string, filter: Filter}, ) => {
+        await new Promise( resolve => setTimeout(resolve, 2000) )
+        return API.getPerfumes({ matchStr, filter })
+    }
 </script>
 
 <style>
@@ -40,22 +44,22 @@
     }
 </style>
 
-<div class="divide-y divide-purpick-100 mb-40">
+<div class="pt-4 pb-24 bg-white">
     {#if title && gender && tags && descriptions }
-    {#await getPerfumes({ matchStr: [...title.tags, ...tags].join(" "), filter: { gender: gender.tags } })}
-    <link rel="stylesheet" href="https://pagecdn.io/lib/font-awesome/5.10.0-11/css/all.min.css" integrity="sha256-p9TTWD+813MlLaxMXMbTA7wN/ArzGyW/L7c5+KkjOkM=" crossorigin="anonymous">
-    <div class="w-full h-full fixed block top-0 left-0 bg-white opacity-75 z-50">
-      <span class="text-pp-500 opacity-75 top-1/2 my-0 mx-auto block relative w-0 h-0" style="
-        top: 50%;
-    ">
-        <i class="fas fa-circle-notch fa-spin fa-5x" />
-      </span>
-    </div>
-    {:then perfumes} 
-        <!-- <Gender gender={gender} /> -->
-        <Title title={title} descriptions={descriptions}/>
-        <MBTI descriptions={descriptions} tags={tags} />
-        <Perfumes perfumes={perfumes.data.hits.hits} />
-    {/await}
+        {#await getPerfumes({ matchStr: [...title.tags, ...tags].join(" "), filter: { gender: gender.tags } })}
+        <link rel="stylesheet" href="https://pagecdn.io/lib/font-awesome/5.10.0-11/css/all.min.css" integrity="sha256-p9TTWD+813MlLaxMXMbTA7wN/ArzGyW/L7c5+KkjOkM=" crossorigin="anonymous">
+        <div class="w-full h-full fixed block top-0 left-0 bg-white opacity-75 z-50">
+        <span class="text-pp-500 opacity-75 top-1/2 my-0 mx-auto block relative" style="
+            top: 50%;
+        ">
+            <i class="fas fa-circle-notch fa-spin fa-5x" />
+        </span>
+        </div>
+        {:then perfumes} 
+            <!-- <Gender gender={gender} /> -->
+            <Title title={title} descriptions={descriptions}/>
+            <MBTI descriptions={descriptions} tags={tags} />
+            <Perfumes perfumes={perfumes.data} />
+        {/await}
     {/if}
 </div>
