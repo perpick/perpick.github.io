@@ -25,4 +25,20 @@ export type Perfume = {
     _type: string
 }
 
-export type Perfumes = Perfume[]
+export type Perfumes = {
+    hits: { 
+        max_score: number;
+        hits: Perfume[]}
+        total: {
+            relation: string;
+            value: number;
+        }
+    timed_out: boolean
+    took: number
+    _shards: {
+        total: number,
+        successful: number,
+        skipped: number,
+        failed: number
+    }
+}

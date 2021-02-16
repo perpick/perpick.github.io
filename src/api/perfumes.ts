@@ -1,10 +1,10 @@
 import Request from "@src/utils/HttpClient"
 import config from "@src/config/config"
-import type { Filter } from '@src/models'
+import type { Filter,Perfumes } from '@src/models'
 import type { AxiosPromise } from "axios"
 
 const Apis = {
-    getPerfumes: <T>({ matchStr, filter }: { matchStr: string, filter: Filter}): AxiosPromise<T> => {
+    getPerfumes: ({ matchStr, filter }: { matchStr: string, filter: Filter}): AxiosPromise<Perfumes> => {
       return Request({
           baseURL: config.ES_URL,
           method: "POST",
