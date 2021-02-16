@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { Perfume } from '@src/models'
   import IntersectionObserver from '@src/components/Image/IntersectionObserver.svelte'
-  import TooltipBtn from '@src/components/Commons/TooltipBtn.svelte'
+	import Content from '@src/components/Commons/Modal/Content.svelte';
+  import Modal from '@src/components/Commons/Modal/Modal.svelte';
   import Image from '@src/components/Image/Image.svelte'
   
   export let perfume: Perfume;
@@ -10,13 +11,15 @@
   <style>
   </style>
       
-  <div class="m-4">
-    <div class="m-4 justify-center items-center">
-      <IntersectionObserver once={true} let:intersecting={intersecting} top={1} bottom={1} left={1} right={1}>
+  <div class="m-2 flex flex-row flex-wrap justify-center items-end">
+    <div class="m-4">
+      <IntersectionObserver once={true} let:intersecting={intersecting}>
         {#if intersecting}
           <Image src={perfume._source.img_url} alt={perfume._source.title} />
         {/if}
       </IntersectionObserver>
     </div>
-    <p class="">{perfume._source.brand} - {perfume._source.title}</p>
-  </div>
+    <Modal>
+      <Content title="자세히 보기" descHead={perfume._source.brand} descBody={perfume._source.title}/>
+    </Modal>
+</div>
