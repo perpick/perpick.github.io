@@ -38,13 +38,9 @@
 </script>
 
 <style>
-    * {
-        font-family: NotoSans;
-        word-break: keep-all;
-    }
 </style>
 
-<div class="pt-4 bg-white mb-4">
+<div class="pt-4 bg-white mb-4 shadow-lg m-4 rounded">
     {#if title && gender && tags && descriptions }
         {#await getPerfumes({ matchStr: [...title.tags, ...tags].join(" "), filter: { gender: gender.tags } })}
         <link rel="stylesheet" href="https://pagecdn.io/lib/font-awesome/5.10.0-11/css/all.min.css" integrity="sha256-p9TTWD+813MlLaxMXMbTA7wN/ArzGyW/L7c5+KkjOkM=" crossorigin="anonymous">

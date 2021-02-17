@@ -22,7 +22,7 @@
   }
 </style>
     
-<div class="m-4 divide-y divide-pb-400">
-  <h1 class="m-2 text-3xl">{descriptions.title}</h1>
+<div class="m-4 divide-y-2 divide-gray-200 tracking-widest">
+  <h1 class="m-2 text-2xl text-pink-200">{descriptions.title}</h1>
   <p class="m-2 pt-2 text-base">{descriptions.detail}</p>
 </div>

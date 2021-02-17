@@ -47,22 +47,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </svelte:head>
-<div class="w-full max-w-xs wrap">
+<div class="w-full max-w-xs wrap ">
   <header class="m-4  cursor-pointer" on:click={() => { $nav.current = 'home' }}>
     <IntersectionObserver>
       <RoundedImage src="/banner.png" alt="logo"/>
     </IntersectionObserver>
-</header>
-  {#if $nav.current === 'home'}
-    <Home />
-  {/if}
-  {#if $nav.current === 'quizzes'}
-    <Quizzes />
-  {/if}
-  {#if $nav.current === 'results'}
-    <Result />
+  </header>
+  <main>
+    {#if $nav.current === 'home'}
+      <Home />
+    {/if}
+    {#if $nav.current === 'quizzes'}
+      <Quizzes />
+    {/if}
+    {#if $nav.current === 'results'}
+      <IntersectionObserver>
+        <Result />
+      </IntersectionObserver>
+    {/if}
+  </main>
+  {#if $nav.current !== 'quizzes'}
+    <footer class="pb-24 divide-y-4 divide-gray-200">
+      <MailChimp />
+    </footer>
   {/if}
 </div>
-<footer class="pb-24">
-  <MailChimp />
-</footer>

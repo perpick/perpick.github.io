@@ -18,10 +18,10 @@
     }
 </style>
 
-<section class="p-1">
+<section class="text-center">
     <button
         type="button"
         style="transition: all .15s ease"
-        class="bg-white text-pb-600 border-pb-600 border-2 active:bg-pb-600 active:text-white hover:bg-pb-600 hover:text-white font-bold uppercase text-sm px-4 py-2 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" 
+        class="bg-white text-pink-200 border-b-2 active:bg-pp-600 active:text-white font-bold uppercase text-sm px-2 pb-1 hover:text-gray-400 hover:border-pink-200 outline-none focus:outline-none" 
         on:click={showPopupLong}>{ title }</button>
 </section>

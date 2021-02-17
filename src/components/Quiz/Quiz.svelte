@@ -11,6 +11,7 @@
   };
 
   const handleClickSelct = (data: string) => {
+    document.body.blur()
     $users.selects = [...$users.selects, data]
     $pagination.page += 1
     if($pagination.page > $pagination.max) $nav.current = 'results'
@@ -30,7 +31,7 @@
     <div class="flex flex-wrap">
       {#each quiz.selectors as selector}
       <div class="w-full m-4 " on:click={() => handleClickSelct(selector.data)}>
-        <button class={`w-full p-4 bg-white hover:bg-pb-400 border-pb-400 border-2 rounded text-base`}>{selector.title}</button>
+        <button class={`w-full p-4 bg-white shadow rounded text-base focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50  hover:outline-none hover:ring-2 hover:ring-purple-400 hover:ring-opacity-50  active:outline-none active:ring-2 active:ring-purple-400 active:ring-opacity-50`}>{selector.title}</button>
       </div>
       {/each}
     </div>

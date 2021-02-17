@@ -11,8 +11,8 @@
   <style>
   </style>
       
-  <div class="m-2 flex flex-row flex-wrap justify-center items-end">
-    <div class="m-4">
+  <div class="px-2 py-4 flex flex-row flex-wrap justify-center items-end">
+    <div class="p-2">
       <IntersectionObserver once={true} let:intersecting={intersecting}>
         {#if intersecting}
           <Image src={perfume._source.img_url} alt={perfume._source.title} />
