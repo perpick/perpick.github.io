@@ -1,6 +1,8 @@
 import axios from 'axios'
 import type { AxiosRequestConfig, AxiosResponse } from 'axios'
 
+import config from '@src/config/config'
+
 // examples 
 
 /**
@@ -19,9 +21,8 @@ import type { AxiosRequestConfig, AxiosResponse } from 'axios'
  * })
  */
 
-const isProd = import.meta.env.MODE === 'production'
 const HttpClient = axios.create({
-    baseURL: isProd ? import.meta.env.SNOWPACK_PUBLIC_API_URL : "{example}",
+    baseURL: config.isProd ? config.PROD_API_URL : config.DEV_API_URL,
     timeout: 3000,
     headers: {'Content-Type' : 'application/json' },
 })
