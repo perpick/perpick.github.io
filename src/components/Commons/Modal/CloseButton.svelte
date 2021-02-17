@@ -1,6 +1,5 @@
-<script>
-	// This property is used by Modal.svelte to pass down the close function
-  export let onClose;
+<script lang="ts">	
+	export let onClose: svelte.JSX.EventHandler<MouseEvent, HTMLButtonElement> | undefined;
 </script>
 
 <style>

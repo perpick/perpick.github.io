@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount, beforeUpdate, onDestroy, createEventDispatcher } from 'svelte'
 	import { typewriter } from './modes'
 	export let interval = 30
