@@ -9,10 +9,14 @@
   </script>
     
   <style>
+    .image_wrap{
+      min-width: 3rem;
+      max-width: 6rem;
+    }
   </style>
       
-  <div class="px-2 py-4 flex flex-row flex-wrap justify-center items-end">
-    <div class="p-2">
+  <div class="px-2 py-4">
+    <div class="p-2 image_wrap">
       <IntersectionObserver once={true} let:intersecting={intersecting}>
         {#if intersecting}
           <Image src={perfume._source.img_url} alt={perfume._source.title} />
