@@ -1,9 +1,13 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   import { users, pagination } from '@src/stores'
   import Welcome from '@src/components/Welcome/Welcome.svelte'
   
-  $pagination.page = 1
-  $users.selects = []
+  onMount(() => {
+    $pagination.page = 1
+    $users.selects = []
+    $users.email = ''
+  })
 </script>
 
 <Welcome />

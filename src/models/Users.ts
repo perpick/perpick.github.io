@@ -1,8 +1,4 @@
-import type { MBTI } from "./MBTI";
-import type { Title } from "./Titles";
-
 export type Users = {
-    mbti?: MBTI;
-    title?: Title;
+    email: string
     selects: string[]
 }
