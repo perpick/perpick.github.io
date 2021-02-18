@@ -18,18 +18,20 @@ const Apis = {
         email,
         selects,
         search : {
-          "query": {
-              "bool": {
-                "should": [
-                  { "match": { "reviews": { "query": match.join(" ")} } }
+          body: {
+            query: {
+              bool: {
+                should: [
+                  { match: { reviews: { query: match.join(" ")} } }
                 ],
-                "filter": {
-                  "terms": {
+                filter: {
+                  terms: {
                     ...filter
                   }
                 }
               }
             }
+          }
         }
       },
     })
