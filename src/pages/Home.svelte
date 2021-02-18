@@ -3,10 +3,12 @@
 	import { form, bindClass } from 'svelte-forms';
 
   import { users, pagination, nav } from '@src/stores'
-  import API from '@src/api/auth'
+  import AuthAPI from '@src/api/auth'
+  import PerfumesAPI from '@src/api/perfumes'
 	import PICA from '@src/components/Commons/PICA.svelte'
   import Typewriter from '@src/components/Typewriter/Typewriter.svelte'
   
+  let total: number
   let submitted = false
 
   onMount(() => {
@@ -17,8 +19,9 @@
   })
 
   const init = async () => {
-        await new Promise(resolve => setTimeout(resolve, 2000))
-        return API.login()
+        await AuthAPI.login()
+        const { data } = await PerfumesAPI.getTotal()
+        total = data
   }
 
 	const emailForm = form(() => ({
@@ -74,7 +77,7 @@
 		</div>
 		<h1 class="text-xl pt-2">Perpick은 지금</h1>
 	</div>
-	<Typewriter interval={100}>
-		<p class="text-sm">약 213,209개의 향수 데이터를 비교하고 있어요!</p>
+	<Typewriter interval={100} delay={500}>
+    <p class="text-sm">약 { total }.000명이 함께하고 있어요!</p>
 	</Typewriter>
 </section>
