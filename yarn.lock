@@ -5536,6 +5536,11 @@ svelte-check@^1.1.32:
     svelte-preprocess "^4.0.0"
     typescript "*"
 
+svelte-forms@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/svelte-forms/-/svelte-forms-1.1.2.tgz#e7392e4d87ce8e34640d903536f39c888718b635"
+  integrity sha512-QDTUHErLenkuxjHBGcFOY7DxdyiuD72sVnQRWC1iqs/gZ35kvt0vhNC8HqhfpqMDJR93pyOZttplMytxEhTtVA==
+
 svelte-hmr@^0.12.1:
   version "0.12.6"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.12.6.tgz#8db574511a61a9473e62739b5043ac87d76b0430"
