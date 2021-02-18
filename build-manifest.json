@@ -161,7 +161,7 @@
       ]
     },
     "dist/api/perfumes.js": {
-      "bytes": 606,
+      "bytes": 656,
       "imports": [
         {
           "path": "dist/utils/HttpClient.js",
@@ -915,7 +915,7 @@
           "bytesInOutput": 116
         },
         "dist/api/perfumes.js": {
-          "bytesInOutput": 283
+          "bytesInOutput": 290
         },
         "dist/components/Commons/PICA.svelte.css": {
           "bytesInOutput": 0
@@ -1074,7 +1074,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 133974
+      "bytes": 133981
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
