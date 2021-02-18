@@ -1,11 +1,11 @@
 <script lang="ts">
-  import type { Perfume } from '@src/models'
+  import type { PerfumeSource } from '@src/models'
   import IntersectionObserver from '@src/components/Image/IntersectionObserver.svelte'
 	import Content from '@src/components/Commons/Modal/Content.svelte';
   import Modal from '@src/components/Commons/Modal/Modal.svelte';
   import Image from '@src/components/Image/Image.svelte'
   
-  export let perfume: Perfume;
+  export let source: PerfumeSource;
   </script>
     
   <style>
@@ -19,11 +19,11 @@
     <div class="p-2 image_wrap">
       <IntersectionObserver once={true} let:intersecting={intersecting}>
         {#if intersecting}
-          <Image src={perfume._source.img_url} alt={perfume._source.title} />
+          <Image src={source.img_url} alt={source.title} />
         {/if}
       </IntersectionObserver>
     </div>
     <Modal>
-      <Content title="자세히 보기" descHead={perfume._source.brand} descBody={perfume._source.title}/>
+      <Content title="자세히 보기" descHead={source.brand} descBody={source.title}/>
     </Modal>
 </div>

@@ -1,8 +1,10 @@
 <script lang="ts">
-  import type { Perfumes } from '@src/models'
+  import type { Perfumes, PerfumeSource } from '@src/models'
   import Perfume from './Perfume.svelte'
 
   export let perfumes: Perfumes;
+
+  let sources: PerfumeSource[] = JSON.parse(perfumes.results.sources)
 </script>
   
 <style>
@@ -15,8 +17,10 @@
 <div class="m-4 divide-y-2 divide-gray-200 tracking-widest">
   <h1 class="m-2 text-2xl  text-pink-200">당신에게 어울리는 브랜드 향수</h1>
   <div class="flex flex-row justify-center items-end">
-    <Perfume perfume={perfumes.hits.hits[0]}/>
-    <Perfume perfume={perfumes.hits.hits[1]}/>
-    <Perfume perfume={perfumes.hits.hits[2]}/>
+    {#each  sources as source, i}
+      {#if i < 3}
+        <Perfume source={source}/>
+      {/if}
+    {/each}
   </div>
 </div>

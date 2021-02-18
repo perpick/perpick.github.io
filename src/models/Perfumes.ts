@@ -26,19 +26,14 @@ export type Perfume = {
 }
 
 export type Perfumes = {
-    hits: { 
-        max_score: number;
-        hits: Perfume[]}
-        total: {
-            relation: string;
-            value: number;
-        }
-    timed_out: boolean
-    took: number
-    _shards: {
-        total: number,
-        successful: number,
-        skipped: number,
-        failed: number
-    }
+    results: {
+        _id: string;
+        ids: string[]
+        selects: string[]
+        email: string
+        maxScore: number
+        search: string
+        sources: string
+    };
+    total: number;
 }

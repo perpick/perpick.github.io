@@ -1,6 +1,4 @@
 <script lang="ts">
-    import type { AxiosPromise, AxiosResponse } from "axios";
-
     import { users } from "@src/stores";
     import { PC } from '@src/utils'
     import API from '@src/api/perfumes'
@@ -31,9 +29,9 @@
     const gender = PC.getGender($users.selects.find(select => select === 'MALE' || select === 'FEMALE'))
     const title = PC.getTitle($users.selects.find(select => select === 'sunrise' || select === 'sunset' || select === 'city' || select === 'nature'))
 
-    const getPerfumes = async ({matchStr, filter}: { matchStr: string, filter: Filter}, ) => {
+    const getPerfumes = async ({match, filter}: { match: string[], filter: Filter}, ) => {
         await new Promise( resolve => setTimeout(resolve, 2000) )
-        return API.getPerfumes({ matchStr, filter })
+        return API.getPerfumes({ email: $users.email, match, filter })
     }
 </script>
 
@@ -42,9 +40,9 @@
 
 <div class="pt-4 bg-white mb-4 shadow-lg m-4 rounded">
     {#if title && gender && tags && descriptions }
-        {#await getPerfumes({ matchStr: [...title.tags, ...tags].join(" "), filter: { gender: gender.tags } })}
+        {#await getPerfumes({ match: [...title.tags, ...tags], filter: { gender: gender.tags } })}
         <link rel="stylesheet" href="https://pagecdn.io/lib/font-awesome/5.10.0-11/css/all.min.css" integrity="sha256-p9TTWD+813MlLaxMXMbTA7wN/ArzGyW/L7c5+KkjOkM=" crossorigin="anonymous">
-        <div class="w-full h-full fixed block top-0 left-0 bg-white opacity-75 z-50">
+        <div class="w-full h-full fixed block top-0 left-0 bg-pp-50 opacity-75 z-50">
         <span class="text-pp-500 opacity-75 top-1/2 my-0 mx-auto block relative" style="
             top: 50%;
         ">
