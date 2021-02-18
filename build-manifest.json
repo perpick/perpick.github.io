@@ -160,6 +160,15 @@
         }
       ]
     },
+    "dist/api/perfumes.js": {
+      "bytes": 604,
+      "imports": [
+        {
+          "path": "dist/utils/HttpClient.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/components/Commons/PICA.svelte.css": {
       "bytes": 56,
       "imports": []
@@ -343,7 +352,7 @@
       ]
     },
     "dist/pages/Home.svelte.js": {
-      "bytes": 7191,
+      "bytes": 7510,
       "imports": [
         {
           "path": "dist/pages/Home.svelte.css",
@@ -367,6 +376,10 @@
         },
         {
           "path": "dist/api/auth.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/api/perfumes.js",
           "kind": "import-statement"
         },
         {
@@ -421,15 +434,6 @@
       "imports": [
         {
           "path": "dist/utils/PerfumeCalc/PerfumeCalc.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
-    "dist/api/perfumes.js": {
-      "bytes": 523,
-      "imports": [
-        {
-          "path": "dist/utils/HttpClient.js",
           "kind": "import-statement"
         }
       ]
@@ -910,6 +914,9 @@
         "dist/api/auth.js": {
           "bytesInOutput": 116
         },
+        "dist/api/perfumes.js": {
+          "bytesInOutput": 273
+        },
         "dist/components/Commons/PICA.svelte.css": {
           "bytesInOutput": 0
         },
@@ -956,7 +963,7 @@
           "bytesInOutput": 1588
         },
         "dist/pages/Home.svelte.js": {
-          "bytesInOutput": 3011
+          "bytesInOutput": 3052
         },
         "dist/utils/PerfumeCalc/PerfumeCalc.js": {
           "bytesInOutput": 344
@@ -975,9 +982,6 @@
         },
         "dist/utils/index.js": {
           "bytesInOutput": 0
-        },
-        "dist/api/perfumes.js": {
-          "bytesInOutput": 218
         },
         "dist/components/Title/Title.svelte.css": {
           "bytesInOutput": 0
@@ -1070,7 +1074,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 133850
+      "bytes": 133946
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
