@@ -23,8 +23,9 @@ import config from '@src/config/config'
 
 const HttpClient = axios.create({
     baseURL: config.isProd ? config.PROD_API_URL : config.DEV_API_URL,
+    withCredentials: true,
     timeout: 3000,
-    headers: {'Content-Type' : 'application/json' },
+    headers: { 'Content-Type' : 'application/json' },
 })
 
 const handleReqFulfilled = (config: AxiosRequestConfig) => {
@@ -35,8 +36,11 @@ const handleReqFulfilled = (config: AxiosRequestConfig) => {
     })
 }
 
-const handleResFulfilled = (response: AxiosResponse<unknown>) => {
-    return response
+const handleResFulfilled = (response: AxiosResponse<any>) => {
+    if(response.config.url === 'auth/login' && response.status === 200) {
+        HttpClient.defaults.headers.common['Authorization'] = `Bearer ${response.data.token.accessToken}`;
+    }
+    return response 
 }
 
 const handleRejected = (error: unknown) => {
