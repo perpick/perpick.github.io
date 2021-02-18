@@ -31,7 +31,7 @@
 
     const getPerfumes = async ({match, filter}: { match: string[], filter: Filter}, ) => {
         await new Promise( resolve => setTimeout(resolve, 2000) )
-        return API.getPerfumes({ email: $users.email, match, filter })
+        return API.getPerfumes({ email: $users.email, selects: $users.selects, match, filter })
     }
 </script>
 

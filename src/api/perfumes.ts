@@ -10,13 +10,13 @@ const Apis = {
       url: "perfume/generate",
       method: "GET",
     }),
-  getPerfumes: ({ email, match, filter }: { email: string, match: string[], filter: Filter}): AxiosPromise<Perfumes> => 
+  getPerfumes: ({ email, selects, match, filter }: { email: string, selects:string[], match: string[], filter: Filter}): AxiosPromise<Perfumes> => 
     Request({
       url: "perfume/generate",
       method: "POST",
       data: {
         email,
-        selects: match,
+        selects,
         search : {
           "query": {
               "bool": {
