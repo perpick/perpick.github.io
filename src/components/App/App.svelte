@@ -3,6 +3,8 @@
 	import Home from "@src/pages/Home.svelte";
 	import Result from "@src/pages/Results.svelte";
 	import Quizzes from "@src/pages/Quizzes.svelte";
+	import Types from "@src/pages/Types.svelte";
+	import Type from "@src/pages/Type.svelte";
   import IntersectionObserver from '@src/components/Image/IntersectionObserver.svelte'
   import RoundedImage from '@src/components/Image/RoundedImage.svelte'
   import MailChimp from '@src/components/MailChimp.svelte'
@@ -65,8 +67,16 @@
         <Result />
       </IntersectionObserver>
     {/if}
+    {#if $nav.current === 'types'}
+      <Types />
+    {/if}
+    {#if $nav.current === 'type'}
+      <IntersectionObserver>
+        <Type />
+      </IntersectionObserver>
+    {/if}
   </main>
-  {#if $nav.current === 'results'}
+  {#if $nav.current === 'results' || $nav.current === 'type'}
     <footer class="pb-24 divide-y-4 divide-gray-200">
       <MailChimp />
     </footer>
