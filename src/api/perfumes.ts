@@ -1,8 +1,9 @@
 import type { AxiosPromise } from "axios"
 
 import Request from "@src/utils/HttpClient"
+import config from "@src/config/config"
 
-import type { Filter,Perfumes } from '@src/models'
+import type { Filter, Perfumes, SearchedPerfume } from '@src/models'
 
 const Apis = {
   getTotal: (): AxiosPromise<number> => 
@@ -34,6 +35,31 @@ const Apis = {
           }
         }
       },
+    }),
+  genPerfumes: ({ match, filter }: { match: string[], filter: Filter}): AxiosPromise<SearchedPerfume> => 
+    Request({
+          baseURL: config.ES_URL,	         
+          method: "POST",	      
+          url: "/kor_perfumes/_search",	          
+          withCredentials: true,	     
+          auth: {	  
+            username: config.ES_USERNAME,	
+            password: config.ES_PASSWORD,	      
+          },
+          data: {
+            query: {
+              bool: {
+                should: [
+                  { match: { reviews: { query: match.join(" ")} } }
+                ],
+                filter: {
+                  terms: {
+                    ...filter
+                  }
+                }
+              }
+            }            
+          }	            
     })
 }
 

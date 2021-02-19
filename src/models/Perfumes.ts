@@ -25,15 +25,36 @@ export type Perfume = {
     _type: string
 }
 
-export type Perfumes = {
-    results: {
-        _id: string;
-        ids: string[]
-        selects: string[]
-        email: string
-        maxScore: number
-        search: string
-        sources: string
+export type SearchedPerfume = {
+    hits: { 
+        max_score: number;
+        hits: Perfume[]
     };
+    total: {
+        relation: string;
+        value: number;
+    };
+    timed_out: boolean
+    took: number
+    _shards: {
+        total: number,
+        successful: number,
+        skipped: number,
+        failed: number
+    }
+}
+
+export type PerfumeDocument = {
+    _id: string;
+    ids: string[]
+    selects: string[]
+    email: string
+    maxScore: number
+    search: string
+    sources: string
+}
+
+export type Perfumes = {
+    results: PerfumeDocument;
     total: number;
 }

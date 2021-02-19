@@ -5,7 +5,7 @@
   
     import Title from '@src/components/Title/Title.svelte'
     import MBTI from '@src/components/MBTI/MBTI.svelte'
-    import Perfumes from '@src/components/Perfumes/Perfumes.svelte'
+    import RecommendedPerfumes from '@src/components/Perfumes/RecommendedPerfumes.svelte'
     import type { Filter } from "@src/models";
     
     const getTagInStrArrLen = (a: string[], t: string) => a.filter(s => s === t).length
@@ -53,7 +53,7 @@
             <!-- <Gender gender={gender} /> -->
             <Title title={title} descriptions={descriptions}/>
             <MBTI descriptions={descriptions} tags={tags} />
-            <Perfumes perfumes={perfumes.data} />
+            <RecommendedPerfumes perfumes={perfumes.data} />
         {/await}
     {/if}
 </div>
