@@ -37,6 +37,12 @@
 	const handleNext = () => {
 		$nav.current = 'quizzes'
 	}
+
+	const handleKeyPress = (e: KeyboardEvent) => {
+		if(e.key === "Enter" && !(!$emailForm.valid || submitted)) {
+			handleLetsPerpick()
+		}
+	}
 </script>
 
 <style>
@@ -59,6 +65,7 @@
 					type="text" 
 					bind:value={$users.email} 
 					use:bindClass={{ form: emailForm }}
+					on:keypress={handleKeyPress}
 					placeholder="이메일을 입력해주세요!" 
 					class="px-2 py-2 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10"/>
 				<span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-2 py-1">
