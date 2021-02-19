@@ -40,8 +40,8 @@
 		$nav.current = 'quizzes'
 	}
 
-	const handleKeyPress = (e: KeyboardEvent) => {
-		if(e.key === "Enter" && !(!$emailForm.valid || submitted)) {
+	const handleKeyPress = (evnet: KeyboardEvent) => {
+		if(evnet.key === "Enter" && !(!$emailForm.valid || submitted)) {
 			handleLetsPerpick()
 		}
 	}
