@@ -34,7 +34,7 @@
     <button 
       type="button" 
       style="transition:all .15s ease" 
-      class=" text-blue-600 font-bold uppercase text-sm px-6 py-3 outline-none focus:outline-none" 
+      class=" text-blue-600 font-bold uppercase text-sm my-3 outline-none focus:outline-none" 
       on:click={toggleTooltip} >
       개인정보 수집 동의 안내
     </button>
