@@ -1,21 +1,23 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-	import { form, bindClass } from 'svelte-forms';
+  import { form, bindClass } from 'svelte-forms';
 
   import { users, pagination, nav } from '@src/stores'
   import AuthAPI from '@src/api/auth'
   import PerfumesAPI from '@src/api/perfumes'
-	import PICA from '@src/components/Commons/PICA.svelte'
+  import PICA from '@src/components/Commons/PICA.svelte'
   import Typewriter from '@src/components/Typewriter/Typewriter.svelte'
   
   let total: string
   let submitted = false
+  let el: HTMLElement;
 
   onMount(() => {
     $pagination.page = 1
     $users.selects = []
     $users.email = ''
     init()
+    el.focus();
   })
 
   const init = async () => {
@@ -66,8 +68,9 @@
 					bind:value={$users.email} 
 					use:bindClass={{ form: emailForm }}
 					on:keypress={handleKeyPress}
+					bind:this={el}
 					placeholder="이메일을 입력해주세요!" 
-					class="px-2 py-2 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10"/>
+					class="px-2 py-2 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm shadow outline-none focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50 w-full pr-10"/>
 				<span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-2 py-1">
 				  <i class="fas fa-user"></i>
 				</span>
