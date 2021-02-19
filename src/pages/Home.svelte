@@ -8,7 +8,7 @@
 	import PICA from '@src/components/Commons/PICA.svelte'
   import Typewriter from '@src/components/Typewriter/Typewriter.svelte'
   
-  let total: number
+  let total: string
   let submitted = false
 
   onMount(() => {
@@ -21,7 +21,7 @@
   const init = async () => {
         await AuthAPI.login()
         const { data } = await PerfumesAPI.getTotal()
-        total = data
+        total = data.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
   }
 
 	const emailForm = form(() => ({
@@ -39,7 +39,6 @@
 	}
 </script>
 
-  
 <style>
 	h1 {
 		font-family: KOTRA_BOLD-Bold
@@ -78,6 +77,6 @@
 		<h1 class="text-xl pt-2">Perpick은 지금</h1>
 	</div>
 	<Typewriter interval={100} delay={500}>
-    <p class="text-sm">약 { total }.000명이 함께하고 있어요!</p>
+    <p class="text-sm">약 { total }명이 함께하고 있어요!</p>
 	</Typewriter>
 </section>
