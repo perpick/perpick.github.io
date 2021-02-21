@@ -65,8 +65,9 @@
 
 <section class="mb-4">
 	<div class="my-1 divide-y-2 divide-pink-200 mx-4">
-		<div class="m-4">
-			<div class="relative flex w-full flex-wrap items-stretch mb-3">
+		<div class="m-2">
+			<PICA placement="bottom"/>
+			<div class="relative flex w-full flex-wrap items-stretch mb-3 mt-1">
 				<input
 					type="text" 
 					bind:value={$users.email} 
@@ -79,22 +80,23 @@
 				  <i class="fas fa-user"></i>
 				</span>
 			</div>
-			<p class="text-xs m-2 text-gray-400">개인정보 수집 동의하고 </p>
+			<p class="text-xs text-gray-400 m-2">개인정보 수집 동의하고 </p>
 			<button 
 				on:click={handleLetsPerpick} 
 				disabled={(!$emailForm.valid || submitted)}
 				class={`text-pp-50 font-bold py-2 px-4 rounded disabled:opacity-50 ${(!$emailForm.valid || submitted) ? "cursor-not-allowed": "hover:text-purple-600 cursor-pointer"}`} >
 				나만의 향수 찾으러 가기
 			</button>
-			<PICA placement="bottom"/>
 		</div>
-		<h1 class="text-xl pt-2">Perpick은 지금</h1>
+		<div>
+			<p 
+			on:click={handleClickAllTypes} 
+			class={`text-sm my-1 text-pb-800 font-bold px-4 rounded disabled:opacity-50 hover:text-purple-600 cursor-pointer`} >
+			모든 추천 유형 보러 가기가기
+		</p>
+		<h1 class="text-xl pt-1">Perpick은 지금</h1>
+		</div>
 	</div>
-	<p 
-		on:click={handleClickAllTypes} 
-		class={`text-sm m-0 text-pb-800 font-bold py-2 px-4 rounded disabled:opacity-50 hover:text-purple-600 cursor-pointer`} >
-		모든 추천 유형 보러 가기가기
-	</p>
 	<Typewriter interval={100} delay={500}>
 		<p class="text-sm">{ total }번 추천되었어요!</p>
 	</Typewriter>
