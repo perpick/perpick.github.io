@@ -7,6 +7,7 @@
     detail: string;
     word: string;
     animal: string;
+    emoji: string;
   }
   export let tags: string[]
 </script>
