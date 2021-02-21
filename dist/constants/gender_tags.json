@@ -1,10 +1,12 @@
 [
   {
-    "type": "MALE",
-    "tags": ["Masculine", "Shared"]
+    "type": "FEMALE",
+    "tags":  ["Feminine", "Shared"],
+    "emoji": "👧"
   },
   {
-    "type": "FEMALE",
-    "tags":  ["Feminine", "Shared"]
+    "type": "MALE",
+    "tags": ["Masculine", "Shared"],
+    "emoji": "👦"
   }
 ]
