@@ -732,7 +732,7 @@
       "imports": []
     },
     "dist/pages/Types.svelte.js": {
-      "bytes": 11415,
+      "bytes": 11525,
       "imports": [
         {
           "path": "dist/pages/Types.svelte.css",
@@ -1159,7 +1159,7 @@
           "bytesInOutput": 0
         },
         "dist/pages/Types.svelte.js": {
-          "bytesInOutput": 4222
+          "bytesInOutput": 4359
         },
         "dist/components/Perfumes/SearchedPerfumes.svelte.css": {
           "bytesInOutput": 0
@@ -1192,7 +1192,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 146082
+      "bytes": 146219
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
