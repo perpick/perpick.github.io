@@ -8,7 +8,7 @@
   import PICA from '@src/components/Commons/PICA.svelte'
   import Typewriter from '@src/components/Typewriter/Typewriter.svelte'
   
-  let total: string
+  let total: string = "324,523"
   let submitted = false
   let el: HTMLElement;
 
@@ -26,9 +26,10 @@
         total = data.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
   }
 
-	const emailForm = form(() => ({
+	const emailForm = form(
+		() => ({
 		email: { value: $users.email, validators: ['required', 'email'] }
-	}));
+		}));
 
 	const handleLetsPerpick = () => {
 		submitted = true
@@ -55,9 +56,9 @@
 	h1 {
 		font-family: KOTRA_BOLD-Bold
 	}
-  p {
-		font-family: RIDIBatang
-  }
+	p {
+			font-family: HangeulNuri-Bold
+	}
 	button {
 		background-color: #B493E7;
 	}
@@ -80,30 +81,25 @@
 				  <i class="fas fa-user"></i>
 				</span>
 			</div>
+			{#if $users.email.length > 8 && $emailForm?.fields?.email?.errors?.includes('email')}
+				<p class="text-xs text-red-500">유효하지 않은 이메일 형식입니다.</p>
+			{/if}
 			<p class="text-xs text-gray-400 m-2">개인정보 수집 동의하고 </p>
 			<button 
 				on:click={handleLetsPerpick} 
-				disabled={(!$emailForm.valid || submitted)}
-				class={`text-pp-50 font-bold py-2 px-4 rounded disabled:opacity-50 ${(!$emailForm.valid || submitted) ? "cursor-not-allowed": "hover:text-purple-600 cursor-pointer"}`} >
+				disabled={($users.email.length < 8 || !$emailForm.valid || submitted)}
+				class={`text-pp-50 font-bold py-2 px-4 rounded disabled:opacity-50 ${($users.email.length < 8 || !$emailForm.valid || submitted) ? "cursor-not-allowed": "hover:text-purple-600 cursor-pointer"}`} >
 				나만의 향수 찾으러 가기
 			</button>
 		</div>
-		<div>
-			<p 
-			on:click={handleClickAllTypes} 
-			class={`text-sm mb-1 mt-2 text-pb-800 font-bold px-4 rounded disabled:opacity-50 hover:text-purple-600 cursor-pointer`} >
-			모든 추천 유형 보러 가기가기
-		</p>
-		<h1 class="text-xl pt-1">Perpick은 지금</h1>
-		</div>
+		<h1 class="text-2xl pt-3">Perpick은 지금</h1>
 	</div>
 	<Typewriter interval={100} delay={500}>
 		<p class="text-sm">총 { total }번 추천되었어요!</p>
 	</Typewriter>
-	<div class="flex text-center justify-center tracking-widest m-1">
-		<p class="m-0 text-sm">Made by&nbsp;</p>
-		<a href="https://github.com/perpick/perpick.github.io" class="text-green-300 text-sm">@Perpick</a>
-		<p class="m-0 text-sm">, See source&nbsp;</p>
-		<a href="https://github.com/perpick/perpick.github.io" class="text-green-300 text-sm">GitHub</a>
-	</div>
+	<p 
+		on:click={handleClickAllTypes} 
+		class={`text-sm mt-1 mx-4 text-gray-700 py-1 bg-pb-200 rounded-sm hover:text-purple-600 cursor-pointer`} >
+		퍼픽의 모든 추천 유형 보러 가기
+	</p>
 </section>

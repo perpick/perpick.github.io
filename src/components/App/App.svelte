@@ -76,9 +76,15 @@
       </IntersectionObserver>
     {/if}
   </main>
-  {#if $nav.current === 'results' || $nav.current === 'type'}
-    <footer class="pb-24 divide-y-4 divide-gray-200">
+  <footer class="pb-24 divide-y-4 divide-gray-200">
+    {#if $nav.current === 'results' || $nav.current === 'type'}
       <MailChimp />
-    </footer>
-  {/if}
+    {/if}
+    <div class="flex text-center justify-center tracking-widest">
+      <span class="m-0 text-xs">Made by&nbsp;</span>
+      <a href="https://github.com/perpick/perpick.github.io" class="text-purple-300 text-xs">@Perpick</a>
+      <span class="m-0 text-xs">, See source&nbsp;</span>
+      <a href="https://github.com/perpick/perpick.github.io" class="text-purple-300 text-xs">GitHub</a>
+    </div>
+  </footer>
 </div>
