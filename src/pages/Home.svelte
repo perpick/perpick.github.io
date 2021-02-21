@@ -22,7 +22,7 @@
 
   const init = async () => {
         await AuthAPI.login()
-        const { data } = await PerfumesAPI.getTotal()
+        const { data = 0 } = await PerfumesAPI.getTotal()
         total = data.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
   }
 
@@ -91,13 +91,19 @@
 		<div>
 			<p 
 			on:click={handleClickAllTypes} 
-			class={`text-sm my-1 text-pb-800 font-bold px-4 rounded disabled:opacity-50 hover:text-purple-600 cursor-pointer`} >
+			class={`text-sm mb-1 mt-2 text-pb-800 font-bold px-4 rounded disabled:opacity-50 hover:text-purple-600 cursor-pointer`} >
 			모든 추천 유형 보러 가기가기
 		</p>
 		<h1 class="text-xl pt-1">Perpick은 지금</h1>
 		</div>
 	</div>
 	<Typewriter interval={100} delay={500}>
-		<p class="text-sm">{ total }번 추천되었어요!</p>
+		<p class="text-sm">총 { total }번 추천되었어요!</p>
 	</Typewriter>
+	<div class="flex text-center justify-center tracking-widest m-1">
+		<p class="m-0 text-sm">Made by&nbsp;</p>
+		<a href="https://github.com/perpick/perpick.github.io" class="text-green-300 text-sm">@Perpick</a>
+		<p class="m-0 text-sm">, See source&nbsp;</p>
+		<a href="https://github.com/perpick/perpick.github.io" class="text-green-300 text-sm">GitHub</a>
+	</div>
 </section>
