@@ -1,11 +1,11 @@
 {
   "inputs": {
     "_snowpack/env.js": {
-      "bytes": 594,
+      "bytes": 595,
       "imports": []
     },
     "dist/components/App/App.svelte.css": {
-      "bytes": 819,
+      "bytes": 843,
       "imports": []
     },
     "_snowpack/pkg/common/index-c3829656.js": {
@@ -96,7 +96,7 @@
       ]
     },
     "dist/pages/Home.svelte.css": {
-      "bytes": 138,
+      "bytes": 136,
       "imports": []
     },
     "_snowpack/pkg/svelte.js": {
@@ -182,7 +182,7 @@
       "imports": []
     },
     "dist/components/Commons/PICA.svelte.js": {
-      "bytes": 4160,
+      "bytes": 4180,
       "imports": [
         {
           "path": "dist/components/Commons/PICA.svelte.css",
@@ -199,7 +199,7 @@
       ]
     },
     "dist/components/Typewriter/Typewriter.svelte.css": {
-      "bytes": 550,
+      "bytes": 558,
       "imports": []
     },
     "dist/components/Typewriter/helpers/hasSingleTextNode.js": {
@@ -335,7 +335,7 @@
       ]
     },
     "dist/components/Typewriter/Typewriter.svelte.js": {
-      "bytes": 5203,
+      "bytes": 5204,
       "imports": [
         {
           "path": "dist/components/Typewriter/Typewriter.svelte.css",
@@ -481,7 +481,7 @@
       "imports": []
     },
     "dist/components/Perfumes/Perfume.svelte.css": {
-      "bytes": 56,
+      "bytes": 57,
       "imports": []
     },
     "dist/components/Image/IntersectionObserver.svelte.css": {
@@ -548,7 +548,7 @@
       ]
     },
     "dist/components/Commons/Modal/Modal.svelte.css": {
-      "bytes": 1750,
+      "bytes": 1728,
       "imports": []
     },
     "_snowpack/pkg/svelte/transition.js": {
@@ -607,7 +607,7 @@
       ]
     },
     "dist/components/Perfumes/Perfume.svelte.js": {
-      "bytes": 5790,
+      "bytes": 5776,
       "imports": [
         {
           "path": "dist/components/Perfumes/Perfume.svelte.css",
@@ -636,7 +636,7 @@
       ]
     },
     "dist/components/Perfumes/RecommendedPerfumes.svelte.js": {
-      "bytes": 4570,
+      "bytes": 4569,
       "imports": [
         {
           "path": "dist/components/Perfumes/RecommendedPerfumes.svelte.css",
@@ -653,7 +653,7 @@
       ]
     },
     "dist/pages/Results.svelte.js": {
-      "bytes": 7637,
+      "bytes": 7477,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -707,7 +707,7 @@
       ]
     },
     "dist/pages/Quizzes.svelte.js": {
-      "bytes": 7439,
+      "bytes": 7440,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -732,7 +732,7 @@
       "imports": []
     },
     "dist/pages/Types.svelte.js": {
-      "bytes": 11525,
+      "bytes": 11522,
       "imports": [
         {
           "path": "dist/pages/Types.svelte.css",
@@ -769,7 +769,7 @@
       "imports": []
     },
     "dist/components/Perfumes/SearchedPerfumes.svelte.js": {
-      "bytes": 4564,
+      "bytes": 4563,
       "imports": [
         {
           "path": "dist/components/Perfumes/SearchedPerfumes.svelte.css",
@@ -786,7 +786,7 @@
       ]
     },
     "dist/pages/Type.svelte.js": {
-      "bytes": 7537,
+      "bytes": 7423,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -964,7 +964,7 @@
           "bytesInOutput": 324
         },
         "_snowpack/env.js": {
-          "bytesInOutput": 549
+          "bytesInOutput": 550
         },
         "dist/components/App/App.svelte.css": {
           "bytesInOutput": 0
@@ -1027,7 +1027,7 @@
           "bytesInOutput": 18642
         },
         "dist/components/Commons/PICA.svelte.js": {
-          "bytesInOutput": 3464
+          "bytesInOutput": 3500
         },
         "dist/components/Typewriter/Typewriter.svelte.css": {
           "bytesInOutput": 0
@@ -1063,7 +1063,7 @@
           "bytesInOutput": 270
         },
         "dist/components/Typewriter/Typewriter.svelte.js": {
-          "bytesInOutput": 1588
+          "bytesInOutput": 1589
         },
         "dist/pages/Home.svelte.js": {
           "bytesInOutput": 4243
@@ -1138,13 +1138,13 @@
           "bytesInOutput": 606
         },
         "dist/components/Perfumes/Perfume.svelte.js": {
-          "bytesInOutput": 1728
+          "bytesInOutput": 1729
         },
         "dist/components/Perfumes/RecommendedPerfumes.svelte.js": {
           "bytesInOutput": 1561
         },
         "dist/pages/Results.svelte.js": {
-          "bytesInOutput": 2665
+          "bytesInOutput": 2593
         },
         "dist/components/Quiz/Quiz.svelte.css": {
           "bytesInOutput": 0
@@ -1159,7 +1159,7 @@
           "bytesInOutput": 0
         },
         "dist/pages/Types.svelte.js": {
-          "bytesInOutput": 4359
+          "bytesInOutput": 4356
         },
         "dist/components/Perfumes/SearchedPerfumes.svelte.css": {
           "bytesInOutput": 0
@@ -1168,7 +1168,7 @@
           "bytesInOutput": 1561
         },
         "dist/pages/Type.svelte.js": {
-          "bytesInOutput": 2633
+          "bytesInOutput": 2583
         },
         "dist/components/Image/RoundedImage.svelte.css": {
           "bytesInOutput": 0
@@ -1192,7 +1192,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 146219
+      "bytes": 146133
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
@@ -1234,10 +1234,10 @@
           "bytesInOutput": 124
         },
         "dist/components/Typewriter/Typewriter.svelte.css": {
-          "bytesInOutput": 548
+          "bytesInOutput": 556
         },
         "dist/components/Perfumes/Perfume.svelte.css": {
-          "bytesInOutput": 56
+          "bytesInOutput": 57
         },
         "dist/components/Commons/Modal/Content.svelte.css": {
           "bytesInOutput": 65
@@ -1255,7 +1255,7 @@
           "bytesInOutput": 130
         }
       },
-      "bytes": 17079
+      "bytes": 17088
     }
   }
 }
