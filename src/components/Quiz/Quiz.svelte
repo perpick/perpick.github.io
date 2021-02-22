@@ -28,7 +28,7 @@
           on:click={() => handleClickSelct(selector.data)}
         >
           <button
-            class={`w-full p-4 bg-white shadow rounded text-base focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50  hover:outline-none hover:ring-2 hover:ring-purple-400 hover:ring-opacity-50  active:outline-none active:ring-2 active:ring-purple-400 active:ring-opacity-50`}
+            class={`w-full p-4 bg-pb-200 shadow-lg rounded text-base focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50  hover:outline-none hover:ring-2 hover:ring-purple-400 hover:ring-opacity-50 hover:shadow-xl active:outline-none active:ring-2 active:ring-purple-400 active:ring-opacity-50 active:shadow-xl `}
             >{selector.title}</button
           >
         </div>

@@ -51,7 +51,7 @@
       </IntersectionObserver>
     {/if}
   </main>
-  <footer class="pb-24 divide-y-4 divide-gray-200">
+  <footer class="pb-24">
     {#if $nav.current === "results" || $nav.current === "type"}
       <MailChimp />
     {/if}
