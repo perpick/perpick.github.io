@@ -12,12 +12,13 @@ module.exports = {
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
     ],
     "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        project: "./tsconfig.json",
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    plugins: [ "@typescript-eslint", "svelte3"],
+	parserOptions: {
+		// add these parser options
+		tsconfigRootDir: __dirname,
+		project: ['./tsconfig.json'],
+		extraFileExtensions: ['.svelte'],
+	},
+    plugins: ["svelte3", "@typescript-eslint"],
 	"rules": {
 		"@typescript-eslint/no-inferrable-types": "off",
 		"@typescript-eslint/no-unsafe-assignment": "off",
@@ -57,15 +58,13 @@ module.exports = {
 		]
 	},
 	"overrides": [
-		{	
-			"files": ["**/*.tsx"],
-			"rules": {
-				"react/prop-types": "off"
-			}
-		},
 		{
 		  "files": ["**/*.svelte"],
 		  "processor": "svelte3/svelte3"
 		}
-	]
+	],
+	settings: {
+	  'svelte3/typescript': require('typescript'), // pass the TypeScript package to the Svelte plugin
+	  // ...
+	}
 }
