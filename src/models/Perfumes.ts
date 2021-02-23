@@ -6,7 +6,7 @@ export type PerfumeSource = {
   gender: string;
   img_url: string;
   launching_month: string;
-  launching_year: string[];
+  launching_year: string;
   main_scent: string[];
   middle_main: string;
   middle_sub: string[];

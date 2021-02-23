@@ -2,12 +2,14 @@
   import { getContext } from "svelte";
   import PopupLong from "./PopupLong.svelte";
 
-  export let title: string, descHead: string, descBody: string;
+  export let title: string,
+    image: string,
+    rows: { title: string; content: string[] }[];
 
   const { open } = getContext("simple-modal");
 
   const showPopupLong = () => {
-    open(PopupLong, { descHead, descBody });
+    open(PopupLong, { image, rows });
   };
 </script>
 
