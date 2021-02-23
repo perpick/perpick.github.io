@@ -401,7 +401,7 @@
       "imports": []
     },
     "dist/constants/mbtis.json.proxy.js": {
-      "bytes": 15648,
+      "bytes": 15621,
       "imports": []
     },
     "dist/constants/mbti_tags.json.proxy.js": {
@@ -1095,7 +1095,7 @@
           "bytesInOutput": 344
         },
         "dist/constants/mbtis.json.proxy.js": {
-          "bytesInOutput": 27557
+          "bytesInOutput": 27506
         },
         "dist/constants/mbti_tags.json.proxy.js": {
           "bytesInOutput": 900
@@ -1218,7 +1218,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 132645
+      "bytes": 132594
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
