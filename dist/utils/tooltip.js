@@ -7,17 +7,24 @@ export const tooltip = (node, options) => {
   const show = () => {
     componentInstance = new tooltipComponent({
       target: document.body,
-      props: {title: options.title, descHead: options.descHead, descBody: options.descBody, pos: options.pos}
+      props: {
+        title: options.title,
+        descHead: options.descHead,
+        descBody: options.descBody,
+        pos: options.pos
+      }
     });
     const tooltip2 = document.querySelector("#tooltip");
     tooltip2.setAttribute("data-show", "");
     popperInstance = Popper.createPopper(button, tooltip2, {
-      modifiers: [{
-        name: "offset",
-        options: {
-          offset: [0, 8]
+      modifiers: [
+        {
+          name: "offset",
+          options: {
+            offset: [0, 8]
+          }
         }
-      }]
+      ]
     });
   };
   const hide = () => {
