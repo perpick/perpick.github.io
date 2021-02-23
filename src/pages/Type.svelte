@@ -58,32 +58,78 @@
       match: [...title.tags, ...tags],
       filter: { gender: gender.tags },
     })}
-      <link
-        rel="stylesheet"
-        href="https://pagecdn.io/lib/font-awesome/5.10.0-11/css/all.min.css"
-        integrity="sha256-p9TTWD+813MlLaxMXMbTA7wN/ArzGyW/L7c5+KkjOkM="
-        crossorigin="anonymous"
-      />
       <div
         class="w-full h-full fixed block top-0 left-0 bg-pp-50 opacity-75 z-50"
       >
-        <span
-          class="text-pp-500 opacity-75 top-1/2 my-0 mx-auto block relative"
-          style="
-            top: 50%;
-        "
-        >
-          <i class="fas fa-circle-notch fa-spin fa-5x" />
-        </span>
+        <div class="h-full flex justify-center pb-4 flex-col items-center">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" stroke="#FFC2D8" />
+          </svg>
+        </div>
       </div>
     {:then perfumes}
-      <!-- <Gender gender={gender} /> --><Title {title} {descriptions} /><MBTI
-        {descriptions}
-        {tags}
-      /><SearchedPerfumes perfumes={perfumes.data} />
+      <div
+        style={`background-color: ${title.bg_color}`}
+        class="p-2 title_shadow"
+      >
+        <!-- <Gender gender={gender} /> -->
+        <Title {title} {descriptions} />
+      </div>
+      <MBTI {descriptions} {tags} /><SearchedPerfumes
+        perfumes={perfumes.data}
+      />
     {/await}
   {/if}
 </div>
 
 <style>
+  .title_shadow {
+    -moz-box-shadow: inset 0 0 20px #fffbfc;
+    -webkit-box-shadow: inset 0 0 20px #fffbfc;
+    box-shadow: inset 0 0 20px #fffbfc;
+  }
+
+  svg {
+    animation: 2s linear infinite svg-animation;
+    max-width: 100px;
+  }
+
+  @keyframes svg-animation {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  circle {
+    animation: 1.4s ease-in-out infinite both circle-animation;
+    display: block;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 280;
+    stroke-width: 4px;
+    transform-origin: 50% 50%;
+  }
+
+  @keyframes circle-animation {
+    0%,
+    25% {
+      stroke-dashoffset: 280;
+      transform: rotate(0);
+    }
+
+    50%,
+    75% {
+      stroke-dashoffset: 75;
+      transform: rotate(45deg);
+    }
+
+    100% {
+      stroke-dashoffset: 280;
+      transform: rotate(360deg);
+    }
+  }
 </style>

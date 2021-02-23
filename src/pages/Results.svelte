@@ -63,24 +63,39 @@
     match: [...title.tags, ...tags],
     filter: { gender: gender.tags },
   })}
-    <div class="flex justify-center pb-4">
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="45" stroke="#FFC2D8" />
-      </svg>
+    <div
+      class="w-full h-full fixed block top-0 left-0 bg-pp-50 opacity-75 z-50"
+    >
+      <div class="h-full flex justify-center pb-4 flex-col items-center">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="45" stroke="#FFC2D8" />
+        </svg>
+      </div>
     </div>
   {:then perfumes}
     <IntersectionObserver>
       <div class="pt-4 bg-white mb-4 shadow-lg m-4 rounded">
-        <!-- <Gender gender={gender} /> --><Title {title} {descriptions} /><MBTI
-          {descriptions}
-          {tags}
-        /><RecommendedPerfumes perfumes={perfumes.data} />
+        <div
+          style={`background-color: ${title.bg_color}`}
+          class="p-2 title_shadow"
+        >
+          <!-- <Gender gender={gender} /> -->
+          <Title {title} {descriptions} />
+        </div>
+        <MBTI {descriptions} {tags} /><RecommendedPerfumes
+          perfumes={perfumes.data}
+        />
       </div>
     </IntersectionObserver>
   {/await}
 {/if}
 
 <style>
+  .title_shadow {
+    -moz-box-shadow: inset 0 0 40px #f2f2f2;
+    -webkit-box-shadow: inset 0 0 40px #f2f2f2;
+    box-shadow: inset 0 0 40px #f2f2f2;
+  }
   svg {
     animation: 2s linear infinite svg-animation;
     max-width: 100px;

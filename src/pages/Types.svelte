@@ -7,7 +7,7 @@
   import gender_tags from "@src/constants/gender_tags.json";
 
   let gender = "FEMALE";
-  let title = "city";
+  let title = "dawn";
 
   const handleClickMBTI = (mbti: {
     mbti: string;
@@ -58,11 +58,13 @@
                   on:click={() => {
                     title = select.type;
                   }}
-                  class={`cursor-pointer text-xs py-3 shadow-lg rounded block leading-normal text-white hover:bg-pb-800 hover:shadow-lg ${
-                    title === select.type ? "bg-pb-800" : "bg-gray-200"
+                  class={`cursor-pointer text-base py-3 shadow-lg rounded block leading-normal font-bold hover:bg-pb-800 hover:text-white hover:shadow-lg ${
+                    title === select.type
+                      ? "bg-pb-800 text-white"
+                      : "bg-gray-200 text-pb-800"
                   }`}
                 >
-                  {select.emoji}
+                  {select.title}
                 </p>
               </li>
             {/each}
@@ -77,7 +79,7 @@
                 on:click={() => handleClickMBTI(mbti)}
               >
                 <p
-                  class={`cursor-pointer text-xs py-3 shadow-lg rounded block leading-normal text-white  bg-white-500 bg-gray-200 hover:bg-pb-800 hover:shadow-lg`}
+                  class={`cursor-pointer text-xs py-3 shadow-lg rounded block leading-normal text-white bg-white-500 bg-gray-200 hover:bg-pb-800 hover:shadow-lg`}
                 >
                   {mbti.emoji}
                 </p>
