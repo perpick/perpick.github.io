@@ -8,7 +8,7 @@
       "bytes": 843,
       "imports": []
     },
-    "_snowpack/pkg/common/index-c3829656.js": {
+    "_snowpack/pkg/common/index-32926514.js": {
       "bytes": 25926,
       "imports": []
     },
@@ -16,16 +16,16 @@
       "bytes": 791,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-c3829656.js",
+          "path": "_snowpack/pkg/common/index-32926514.js",
           "kind": "import-statement"
         }
       ]
     },
-    "_snowpack/pkg/common/index-51c9195f.js": {
+    "_snowpack/pkg/common/index-7ea4ebdf.js": {
       "bytes": 1782,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-c3829656.js",
+          "path": "_snowpack/pkg/common/index-32926514.js",
           "kind": "import-statement"
         }
       ]
@@ -34,11 +34,11 @@
       "bytes": 99,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-51c9195f.js",
+          "path": "_snowpack/pkg/common/index-7ea4ebdf.js",
           "kind": "import-statement"
         },
         {
-          "path": "_snowpack/pkg/common/index-c3829656.js",
+          "path": "_snowpack/pkg/common/index-32926514.js",
           "kind": "import-statement"
         }
       ]
@@ -103,7 +103,7 @@
       "bytes": 251,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-c3829656.js",
+          "path": "_snowpack/pkg/common/index-32926514.js",
           "kind": "import-statement"
         }
       ]
@@ -112,11 +112,11 @@
       "bytes": 6764,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-c3829656.js",
+          "path": "_snowpack/pkg/common/index-32926514.js",
           "kind": "import-statement"
         },
         {
-          "path": "_snowpack/pkg/common/index-51c9195f.js",
+          "path": "_snowpack/pkg/common/index-7ea4ebdf.js",
           "kind": "import-statement"
         }
       ]
@@ -514,11 +514,32 @@
       "imports": []
     },
     "dist/components/Commons/Modal/PopupLong.svelte.css": {
-      "bytes": 130,
+      "bytes": 190,
       "imports": []
     },
+    "dist/components/Image/RoundedImage.svelte.css": {
+      "bytes": 100,
+      "imports": []
+    },
+    "dist/components/Image/RoundedImage.svelte.js": {
+      "bytes": 2032,
+      "imports": [
+        {
+          "path": "dist/components/Image/RoundedImage.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/components/Commons/Modal/PopupLong.svelte.js": {
-      "bytes": 2625,
+      "bytes": 6027,
       "imports": [
         {
           "path": "dist/components/Commons/Modal/PopupLong.svelte.css",
@@ -527,11 +548,19 @@
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Image/RoundedImage.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Image/IntersectionObserver.svelte.js",
+          "kind": "import-statement"
         }
       ]
     },
     "dist/components/Commons/Modal/Content.svelte.js": {
-      "bytes": 2190,
+      "bytes": 2141,
       "imports": [
         {
           "path": "dist/components/Commons/Modal/Content.svelte.css",
@@ -559,7 +588,7 @@
       "bytes": 313,
       "imports": [
         {
-          "path": "_snowpack/pkg/common/index-c3829656.js",
+          "path": "_snowpack/pkg/common/index-32926514.js",
           "kind": "import-statement"
         }
       ]
@@ -611,7 +640,7 @@
       ]
     },
     "dist/components/Perfumes/Perfume.svelte.js": {
-      "bytes": 5776,
+      "bytes": 9493,
       "imports": [
         {
           "path": "dist/components/Perfumes/Perfume.svelte.css",
@@ -838,27 +867,6 @@
         }
       ]
     },
-    "dist/components/Image/RoundedImage.svelte.css": {
-      "bytes": 100,
-      "imports": []
-    },
-    "dist/components/Image/RoundedImage.svelte.js": {
-      "bytes": 2032,
-      "imports": [
-        {
-          "path": "dist/components/Image/RoundedImage.svelte.css",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/svelte/internal.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "_snowpack/pkg/svelte.js",
-          "kind": "import-statement"
-        }
-      ]
-    },
     "dist/components/MailChimp.svelte.css": {
       "bytes": 42,
       "imports": []
@@ -881,7 +889,7 @@
       ]
     },
     "dist/styles/TailwindStyles.svelte.css": {
-      "bytes": 13253,
+      "bytes": 13336,
       "imports": []
     },
     "dist/styles/TailwindStyles.svelte.js": {
@@ -989,13 +997,13 @@
         "dist/components/App/App.svelte.css": {
           "bytesInOutput": 0
         },
-        "_snowpack/pkg/common/index-c3829656.js": {
+        "_snowpack/pkg/common/index-32926514.js": {
           "bytesInOutput": 7859
         },
         "_snowpack/pkg/svelte/internal.js": {
           "bytesInOutput": 0
         },
-        "_snowpack/pkg/common/index-51c9195f.js": {
+        "_snowpack/pkg/common/index-7ea4ebdf.js": {
           "bytesInOutput": 427
         },
         "_snowpack/pkg/svelte/store.js": {
@@ -1139,11 +1147,17 @@
         "dist/components/Commons/Modal/PopupLong.svelte.css": {
           "bytesInOutput": 0
         },
+        "dist/components/Image/RoundedImage.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/Image/RoundedImage.svelte.js": {
+          "bytesInOutput": 614
+        },
         "dist/components/Commons/Modal/PopupLong.svelte.js": {
-          "bytesInOutput": 1159
+          "bytesInOutput": 2098
         },
         "dist/components/Commons/Modal/Content.svelte.js": {
-          "bytesInOutput": 863
+          "bytesInOutput": 828
         },
         "dist/components/Commons/Modal/Modal.svelte.css": {
           "bytesInOutput": 0
@@ -1161,7 +1175,7 @@
           "bytesInOutput": 606
         },
         "dist/components/Perfumes/Perfume.svelte.js": {
-          "bytesInOutput": 1729
+          "bytesInOutput": 4309
         },
         "dist/components/Perfumes/RecommendedPerfumes.svelte.js": {
           "bytesInOutput": 1561
@@ -1196,12 +1210,6 @@
         "dist/pages/Type.svelte.js": {
           "bytesInOutput": 2561
         },
-        "dist/components/Image/RoundedImage.svelte.css": {
-          "bytesInOutput": 0
-        },
-        "dist/components/Image/RoundedImage.svelte.js": {
-          "bytesInOutput": 614
-        },
         "dist/components/MailChimp.svelte.css": {
           "bytesInOutput": 0
         },
@@ -1218,16 +1226,13 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 132588
+      "bytes": 136072
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
       "inputs": {
         "dist/components/App/App.svelte.css": {
           "bytesInOutput": 811
-        },
-        "dist/components/Image/RoundedImage.svelte.css": {
-          "bytesInOutput": 100
         },
         "dist/components/MailChimp.svelte.css": {
           "bytesInOutput": 42
@@ -1245,7 +1250,7 @@
           "bytesInOutput": 66
         },
         "dist/styles/TailwindStyles.svelte.css": {
-          "bytesInOutput": 12916
+          "bytesInOutput": 12999
         },
         "dist/components/Commons/PICA.svelte.css": {
           "bytesInOutput": 56
@@ -1284,10 +1289,13 @@
           "bytesInOutput": 42
         },
         "dist/components/Commons/Modal/PopupLong.svelte.css": {
-          "bytesInOutput": 130
+          "bytesInOutput": 190
+        },
+        "dist/components/Image/RoundedImage.svelte.css": {
+          "bytesInOutput": 100
         }
       },
-      "bytes": 19531
+      "bytes": 19674
     }
   }
 }
