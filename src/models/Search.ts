@@ -1,17 +1,11 @@
-type Range = {
+type Range = object;
 
-}
+type Order = object;
 
-type Order = {
-
-}
-
-type Filter = {
-
-}
+type Filter = object;
 
 export type Search = {
-    range: Range,
-    order: Order,
-    filter: Filter
-}
+  range: Range;
+  order: Order;
+  filter: Filter;
+};

@@ -1,4 +1,4 @@
 export type Users = {
-    email: string
-    selects: string[]
-}
+  email: string;
+  selects: string[];
+};

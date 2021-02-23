@@ -1,3 +1,3 @@
 export type Filter = {
-    gender: string[]
-}
+  gender: string[];
+};

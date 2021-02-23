@@ -1,1 +1,1 @@
-export type Title = "city" | "nature" | "sunrise" | "sunset" 
+export type Title = "dawn" | "morning" | "afternoon" | "evening";

@@ -1,5 +1,6 @@
-type CleanChildNodes = (node: Element) => void
+type CleanChildNodes = (node: Element) => void;
 
-const cleanChildNodes: CleanChildNodes = node => node.childNodes.forEach(el => el.remove())
+const cleanChildNodes: CleanChildNodes = (node) =>
+  node.childNodes.forEach((el) => el.remove());
 
-export { cleanChildNodes }
+export { cleanChildNodes };
