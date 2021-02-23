@@ -1,3 +1,7 @@
+
+const eslintSveltePreprocess = require("eslint-svelte3-preprocess");
+const svelteConfig = require("./svelte.config");
+
 module.exports = {
     "env": {
         es6: true,
@@ -63,8 +67,7 @@ module.exports = {
 		  "processor": "svelte3/svelte3"
 		}
 	],
-	settings: {
-	  'svelte3/typescript': require('typescript'), // pass the TypeScript package to the Svelte plugin
-	  // ...
-	}
+    settings: {
+        "svelte3/preprocess": eslintSveltePreprocess(svelteConfig.preprocess),
+    },
 }

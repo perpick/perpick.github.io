@@ -22,7 +22,8 @@
 		"build": "snowpack build",
 		"deploy": "gh-pages -d dist",
 		"test": "jest",
-		"lint": "eslint . --ext .ts,.svelte --fix"
+		"lint": "eslint . --ext .ts,.svelte --fix",
+		"check": "npx svelte-check"
 	},
 	"dependencies": {
 		"svelte": "^3.24.0"
@@ -51,6 +52,7 @@
 		"eslint-config-prettier": "^8.0.0",
 		"eslint-plugin-prettier": "^3.3.1",
 		"eslint-plugin-svelte3": "^3.0.0",
+		"eslint-svelte3-preprocess": "^0.0.5",
 		"gh-pages": "^3.1.0",
 		"husky": "^5.0.9",
 		"jest": "^26.6.3",
@@ -58,10 +60,10 @@
 		"prettier": "^2.2.1",
 		"prettier-plugin-svelte": "^2.1.4",
 		"snowpack": "^3.0.11",
-		"svelte-check": "^1.1.32",
+		"svelte-check": "^1.1.35",
 		"svelte-forms": "^1.1.2",
 		"svelte-jester": "^1.3.0",
-		"svelte-preprocess": "^4.6.6",
+		"svelte-preprocess": "^4.6.9",
 		"tailwindcss": "^2.0.2",
 		"ts-jest": "^26.5.1",
 		"typescript": "^4.1.5"
