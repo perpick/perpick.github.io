@@ -1,10 +1,10 @@
-import { writable } from 'svelte/store';
+import { writable } from "svelte/store";
 
-import type { Users } from '@src/models'
+import type { Users } from "@src/models";
 
 const users = writable<Users>({
-    email: '',
-    selects: [],
-})
+  email: "",
+  selects: [],
+});
 
-export default users
+export default users;

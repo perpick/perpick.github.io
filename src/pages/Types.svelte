@@ -6,8 +6,8 @@
   import titles from "@src/constants/titles.json";
   import gender_tags from "@src/constants/gender_tags.json";
 
-  let gender: string = "FEMALE";
-  let title: string = "city";
+  let gender = "FEMALE";
+  let title = "city";
 
   const handleClickMBTI = (mbti: {
     mbti: string;

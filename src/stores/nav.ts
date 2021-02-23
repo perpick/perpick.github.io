@@ -1,8 +1,8 @@
-import type { Nav } from '@src/models';
-import { writable } from 'svelte/store';
+import type { Nav } from "@src/models";
+import { writable } from "svelte/store";
 
 const nav = writable<Nav>({
-    current: "home"
-})
+  current: "home",
+});
 
-export default nav
+export default nav;

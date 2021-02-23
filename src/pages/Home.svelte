@@ -8,7 +8,7 @@
   import PICA from "@src/components/Commons/PICA.svelte";
   import Typewriter from "@src/components/Typewriter/Typewriter.svelte";
 
-  let total: string = "324,523";
+  let total = "324,523";
   let submitted = false;
   let el: HTMLElement;
 

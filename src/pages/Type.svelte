@@ -33,10 +33,10 @@
   const title = PC.getTitle(
     $users.selects.find(
       (select) =>
-        select === "sunrise" ||
-        select === "sunset" ||
-        select === "city" ||
-        select === "nature",
+        select === "dawn" ||
+        select === "morning" ||
+        select === "afternoon" ||
+        select === "evening",
     ),
   );
 
