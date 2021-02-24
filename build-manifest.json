@@ -356,7 +356,7 @@
       ]
     },
     "dist/pages/Home.svelte.js": {
-      "bytes": 16536,
+      "bytes": 16518,
       "imports": [
         {
           "path": "dist/pages/Home.svelte.css",
@@ -1094,7 +1094,7 @@
           "bytesInOutput": 1589
         },
         "dist/pages/Home.svelte.js": {
-          "bytesInOutput": 7839
+          "bytesInOutput": 7803
         },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 0
@@ -1226,7 +1226,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 139498
+      "bytes": 139462
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
