@@ -5,7 +5,7 @@
       "imports": []
     },
     "dist/components/App/App.svelte.css": {
-      "bytes": 843,
+      "bytes": 1015,
       "imports": []
     },
     "_snowpack/pkg/common/index-32926514.js": {
@@ -96,7 +96,7 @@
       ]
     },
     "dist/pages/Home.svelte.css": {
-      "bytes": 136,
+      "bytes": 179,
       "imports": []
     },
     "_snowpack/pkg/svelte.js": {
@@ -356,7 +356,7 @@
       ]
     },
     "dist/pages/Home.svelte.js": {
-      "bytes": 9929,
+      "bytes": 12072,
       "imports": [
         {
           "path": "dist/pages/Home.svelte.css",
@@ -889,7 +889,7 @@
       ]
     },
     "dist/styles/TailwindStyles.svelte.css": {
-      "bytes": 13336,
+      "bytes": 13547,
       "imports": []
     },
     "dist/styles/TailwindStyles.svelte.js": {
@@ -906,7 +906,7 @@
       ]
     },
     "dist/components/App/App.svelte.js": {
-      "bytes": 13745,
+      "bytes": 13962,
       "imports": [
         {
           "path": "dist/components/App/App.svelte.css",
@@ -998,7 +998,7 @@
           "bytesInOutput": 0
         },
         "_snowpack/pkg/common/index-32926514.js": {
-          "bytesInOutput": 7859
+          "bytesInOutput": 7858
         },
         "_snowpack/pkg/svelte/internal.js": {
           "bytesInOutput": 0
@@ -1052,7 +1052,7 @@
           "bytesInOutput": 0
         },
         "_snowpack/pkg/@popperjs/core.js": {
-          "bytesInOutput": 18642
+          "bytesInOutput": 18651
         },
         "dist/components/Commons/PICA.svelte.js": {
           "bytesInOutput": 3500
@@ -1094,7 +1094,7 @@
           "bytesInOutput": 1589
         },
         "dist/pages/Home.svelte.js": {
-          "bytesInOutput": 4243
+          "bytesInOutput": 5531
         },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 0
@@ -1121,13 +1121,13 @@
           "bytesInOutput": 0
         },
         "dist/components/Title/Title.svelte.js": {
-          "bytesInOutput": 939
+          "bytesInOutput": 935
         },
         "dist/components/MBTI/MBTI.svelte.css": {
           "bytesInOutput": 0
         },
         "dist/components/MBTI/MBTI.svelte.js": {
-          "bytesInOutput": 692
+          "bytesInOutput": 690
         },
         "dist/components/Perfumes/RecommendedPerfumes.svelte.css": {
           "bytesInOutput": 0
@@ -1154,10 +1154,10 @@
           "bytesInOutput": 614
         },
         "dist/components/Commons/Modal/PopupLong.svelte.js": {
-          "bytesInOutput": 2098
+          "bytesInOutput": 2096
         },
         "dist/components/Commons/Modal/Content.svelte.js": {
-          "bytesInOutput": 828
+          "bytesInOutput": 827
         },
         "dist/components/Commons/Modal/Modal.svelte.css": {
           "bytesInOutput": 0
@@ -1166,7 +1166,7 @@
           "bytesInOutput": 153
         },
         "dist/components/Commons/Modal/Modal.svelte.js": {
-          "bytesInOutput": 6675
+          "bytesInOutput": 6679
         },
         "dist/components/Image/Image.svelte.css": {
           "bytesInOutput": 0
@@ -1187,10 +1187,10 @@
           "bytesInOutput": 0
         },
         "dist/components/Quiz/Quiz.svelte.js": {
-          "bytesInOutput": 1998
+          "bytesInOutput": 1996
         },
         "dist/pages/Quizzes.svelte.js": {
-          "bytesInOutput": 2934
+          "bytesInOutput": 2933
         },
         "dist/pages/Types.svelte.css": {
           "bytesInOutput": 0
@@ -1220,25 +1220,25 @@
           "bytesInOutput": 0
         },
         "dist/components/App/App.svelte.js": {
-          "bytesInOutput": 4240
+          "bytesInOutput": 4457
         },
         "dist/index.js": {
           "bytesInOutput": 139
         }
       },
-      "bytes": 136072
+      "bytes": 137577
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
       "inputs": {
         "dist/components/App/App.svelte.css": {
-          "bytesInOutput": 811
+          "bytesInOutput": 983
         },
         "dist/components/MailChimp.svelte.css": {
           "bytesInOutput": 42
         },
         "dist/pages/Home.svelte.css": {
-          "bytesInOutput": 136
+          "bytesInOutput": 179
         },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 1137
@@ -1250,7 +1250,7 @@
           "bytesInOutput": 66
         },
         "dist/styles/TailwindStyles.svelte.css": {
-          "bytesInOutput": 12999
+          "bytesInOutput": 13204
         },
         "dist/components/Commons/PICA.svelte.css": {
           "bytesInOutput": 56
@@ -1295,7 +1295,7 @@
           "bytesInOutput": 100
         }
       },
-      "bytes": 19674
+      "bytes": 20094
     }
   }
 }
