@@ -8,7 +8,7 @@
 </script>
 
 <div class="m-4 divide-y-2 divide-gray-200 tracking-widest">
-  <h1 class="m-2 text-2xl  text-pink-200">당신에게 어울리는 브랜드 향수</h1>
+  <h1 class="m-2 text-2xl  text-pink-400">당신에게 어울리는 브랜드 향수</h1>
   <div class="flex flex-row justify-center items-end">
     {#each sources as source, i}
       {#if i < 3}

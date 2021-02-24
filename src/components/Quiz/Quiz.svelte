@@ -18,8 +18,8 @@
   };
 </script>
 
-<div class="px-2">
-  {#if quiz.page === $pagination.page}
+{#if quiz.page === $pagination.page}
+  <div class="px-2 init_anim">
     <p class="text-xl">{quiz.title}</p>
     <div class="flex flex-wrap">
       {#each quiz.selectors as selector}
@@ -34,12 +34,25 @@
         </div>
       {/each}
     </div>
-  {/if}
-</div>
+  </div>
+{/if}
 
 <style>
   * {
     font-family: Jal_Onuel;
     word-break: keep-all;
+  }
+  .init_anim {
+    animation-name: init;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+  }
+  @keyframes init {
+    0% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 </style>

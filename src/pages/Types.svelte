@@ -27,11 +27,11 @@
 </script>
 
 <IntersectionObserver>
-  <div class="pt-4 bg-white mb-4 shadow-lg m-4 rounded">
+  <div class="pt-4 bg-white mb-4 shadow-lg m-4 rounded init_anim">
     <div class="flex flex-wrap">
       <div class="w-full">
         <div class="px-1 m-4">
-          <h2>성별 고르기</h2>
+          <h2>성별</h2>
           <ul class="grid grid-cols-2 gap-2">
             {#each gender_tags as select}
               <li class="mx-1 my-2 text-center">
@@ -39,8 +39,8 @@
                   on:click={() => {
                     gender = select.type;
                   }}
-                  class={`cursor-pointer text-xs  py-3 shadow-lg rounded block leading-normal text-white hover:bg-pb-800 hover:shadow-lg ${
-                    gender === select.type ? "bg-pb-800" : "bg-gray-200"
+                  class={`cursor-pointer text-xs  py-3 shadow-lg rounded block leading-normal text-white hover:bg-pb-600 hover:shadow-lg ${
+                    gender === select.type ? "bg-pb-600" : "bg-gray-200"
                   }`}
                 >
                   <i class="fas fa-space-shuttle text-base mr-1" />
@@ -50,7 +50,7 @@
             {/each}
           </ul>
           <div class="px-1  m-4" />
-          <h2>타이틀 고르기</h2>
+          <h2>선호하는 시간대</h2>
           <ul class="grid grid-cols-4 gap-2">
             {#each titles as select}
               <li class="mx-1 my-2 text-center">
@@ -58,10 +58,10 @@
                   on:click={() => {
                     title = select.type;
                   }}
-                  class={`cursor-pointer text-base py-3 shadow-lg rounded block leading-normal font-bold hover:bg-pb-800 hover:text-white hover:shadow-lg ${
+                  class={`cursor-pointer text-base py-3 shadow-lg rounded block leading-normal font-bold hover:bg-pb-600 hover:text-white hover:shadow-lg ${
                     title === select.type
-                      ? "bg-pb-800 text-white"
-                      : "bg-gray-200 text-pb-800"
+                      ? "bg-pb-600 text-white"
+                      : "bg-gray-200 text-pb-600"
                   }`}
                 >
                   {select.title}
@@ -71,7 +71,7 @@
           </ul>
         </div>
         <div class="px-1 m-4">
-          <h2>동물 고르기</h2>
+          <h2>궁금한 동물 유형</h2>
           <ul class="grid grid-cols-4 gap-2">
             {#each mbtis as mbti}
               <li
@@ -79,7 +79,7 @@
                 on:click={() => handleClickMBTI(mbti)}
               >
                 <p
-                  class={`cursor-pointer text-xs py-3 shadow-lg rounded block leading-normal text-white bg-white-500 bg-gray-200 hover:bg-pb-800 hover:shadow-lg`}
+                  class={`cursor-pointer text-xs py-3 shadow-lg rounded block leading-normal text-white bg-white-500 bg-gray-200 hover:bg-pb-600 hover:shadow-lg`}
                 >
                   {mbti.emoji}
                 </p>
@@ -96,5 +96,18 @@
   h2 {
     font-family: KOTRA_BOLD-Bold;
     word-break: keep-all;
+  }
+  .init_anim {
+    animation-name: init;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+  }
+  @keyframes init {
+    0% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 </style>

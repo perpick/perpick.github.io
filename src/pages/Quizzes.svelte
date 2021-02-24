@@ -45,3 +45,6 @@
 {#each quizzes as quiz}
   <Quiz {quiz} />
 {/each}
+
+<style>
+</style>
