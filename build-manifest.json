@@ -96,7 +96,7 @@
       ]
     },
     "dist/pages/Home.svelte.css": {
-      "bytes": 1668,
+      "bytes": 1711,
       "imports": []
     },
     "_snowpack/pkg/svelte.js": {
@@ -356,7 +356,7 @@
       ]
     },
     "dist/pages/Home.svelte.js": {
-      "bytes": 16586,
+      "bytes": 16536,
       "imports": [
         {
           "path": "dist/pages/Home.svelte.css",
@@ -1094,7 +1094,7 @@
           "bytesInOutput": 1589
         },
         "dist/pages/Home.svelte.js": {
-          "bytesInOutput": 7889
+          "bytesInOutput": 7839
         },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 0
@@ -1226,7 +1226,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 139548
+      "bytes": 139498
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
@@ -1238,7 +1238,7 @@
           "bytesInOutput": 42
         },
         "dist/pages/Home.svelte.css": {
-          "bytesInOutput": 1642
+          "bytesInOutput": 1685
         },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 1137
@@ -1295,7 +1295,7 @@
           "bytesInOutput": 100
         }
       },
-      "bytes": 23083
+      "bytes": 23126
     }
   }
 }
