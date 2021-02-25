@@ -16,7 +16,7 @@
   <br />
   {#each rows as row}
     <h2 class="text-lg">{row.title}</h2>
-    <p class="text-base text-pb-900 font-bold">
+    <p class="text-sm text-purple-600 font-bold">
       {row.content.reduce((p, c) => `${p}, ${c}`)}
     </p>
     <br />
@@ -30,6 +30,10 @@
   }
   h2 {
     font-family: KOTRA_BOLD-Bold;
+    word-break: keep-all;
+  }
+  p {
+    font-family: RIDIBatang;
     word-break: keep-all;
   }
   .image_wrap {
