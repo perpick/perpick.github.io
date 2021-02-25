@@ -53,7 +53,7 @@
       ]
     },
     "dist/constants/quizzes.json.proxy.js": {
-      "bytes": 2700,
+      "bytes": 3015,
       "imports": []
     },
     "dist/stores/pagination.js": {
@@ -514,7 +514,7 @@
       "imports": []
     },
     "dist/components/Commons/Modal/PopupLong.svelte.css": {
-      "bytes": 190,
+      "bytes": 250,
       "imports": []
     },
     "dist/components/Image/RoundedImage.svelte.css": {
@@ -539,7 +539,7 @@
       ]
     },
     "dist/components/Commons/Modal/PopupLong.svelte.js": {
-      "bytes": 6027,
+      "bytes": 6044,
       "imports": [
         {
           "path": "dist/components/Commons/Modal/PopupLong.svelte.css",
@@ -639,8 +639,12 @@
         }
       ]
     },
+    "dist/constants/density.json.proxy.js": {
+      "bytes": 590,
+      "imports": []
+    },
     "dist/components/Perfumes/Perfume.svelte.js": {
-      "bytes": 9493,
+      "bytes": 9590,
       "imports": [
         {
           "path": "dist/components/Perfumes/Perfume.svelte.css",
@@ -664,6 +668,10 @@
         },
         {
           "path": "dist/components/Image/Image.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/constants/density.json.proxy.js",
           "kind": "import-statement"
         }
       ]
@@ -889,7 +897,7 @@
       ]
     },
     "dist/styles/TailwindStyles.svelte.css": {
-      "bytes": 13975,
+      "bytes": 13978,
       "imports": []
     },
     "dist/styles/TailwindStyles.svelte.js": {
@@ -1016,7 +1024,7 @@
           "bytesInOutput": 0
         },
         "dist/constants/quizzes.json.proxy.js": {
-          "bytesInOutput": 3906
+          "bytesInOutput": 4527
         },
         "dist/stores/pagination.js": {
           "bytesInOutput": 50
@@ -1154,7 +1162,7 @@
           "bytesInOutput": 614
         },
         "dist/components/Commons/Modal/PopupLong.svelte.js": {
-          "bytesInOutput": 2098
+          "bytesInOutput": 2115
         },
         "dist/components/Commons/Modal/Content.svelte.js": {
           "bytesInOutput": 875
@@ -1174,8 +1182,11 @@
         "dist/components/Image/Image.svelte.js": {
           "bytesInOutput": 606
         },
+        "dist/constants/density.json.proxy.js": {
+          "bytesInOutput": 832
+        },
         "dist/components/Perfumes/Perfume.svelte.js": {
-          "bytesInOutput": 4309
+          "bytesInOutput": 4030
         },
         "dist/components/Perfumes/RecommendedPerfumes.svelte.js": {
           "bytesInOutput": 1561
@@ -1226,7 +1237,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 139462
+      "bytes": 140653
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
@@ -1250,7 +1261,7 @@
           "bytesInOutput": 406
         },
         "dist/styles/TailwindStyles.svelte.css": {
-          "bytesInOutput": 13628
+          "bytesInOutput": 13631
         },
         "dist/components/Commons/PICA.svelte.css": {
           "bytesInOutput": 56
@@ -1289,13 +1300,13 @@
           "bytesInOutput": 42
         },
         "dist/components/Commons/Modal/PopupLong.svelte.css": {
-          "bytesInOutput": 190
+          "bytesInOutput": 250
         },
         "dist/components/Image/RoundedImage.svelte.css": {
           "bytesInOutput": 100
         }
       },
-      "bytes": 23126
+      "bytes": 23189
     }
   }
 }
