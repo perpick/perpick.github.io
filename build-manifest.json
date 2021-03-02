@@ -1,11 +1,11 @@
 {
   "inputs": {
     "_snowpack/env.js": {
-      "bytes": 595,
+      "bytes": 672,
       "imports": []
     },
     "dist/components/App/App.svelte.css": {
-      "bytes": 843,
+      "bytes": 819,
       "imports": []
     },
     "_snowpack/pkg/common/index-32926514.js": {
@@ -182,7 +182,7 @@
       "imports": []
     },
     "dist/components/Commons/PICA.svelte.js": {
-      "bytes": 4180,
+      "bytes": 4190,
       "imports": [
         {
           "path": "dist/components/Commons/PICA.svelte.css",
@@ -355,8 +355,33 @@
         }
       ]
     },
+    "dist/components/KakaoShareBtn.svelte.css": {
+      "bytes": 126,
+      "imports": []
+    },
+    "dist/components/KakaoShareBtn.svelte.js": {
+      "bytes": 2305,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/KakaoShareBtn.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
     "dist/pages/Home.svelte.js": {
-      "bytes": 16518,
+      "bytes": 17064,
       "imports": [
         {
           "path": "dist/pages/Home.svelte.css",
@@ -392,6 +417,10 @@
         },
         {
           "path": "dist/components/Typewriter/Typewriter.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/KakaoShareBtn.svelte.js",
           "kind": "import-statement"
         }
       ]
@@ -897,7 +926,7 @@
       ]
     },
     "dist/styles/TailwindStyles.svelte.css": {
-      "bytes": 13978,
+      "bytes": 14183,
       "imports": []
     },
     "dist/styles/TailwindStyles.svelte.js": {
@@ -914,7 +943,7 @@
       ]
     },
     "dist/components/App/App.svelte.js": {
-      "bytes": 13216,
+      "bytes": 13470,
       "imports": [
         {
           "path": "dist/components/App/App.svelte.css",
@@ -1000,13 +1029,13 @@
           "bytesInOutput": 324
         },
         "_snowpack/env.js": {
-          "bytesInOutput": 550
+          "bytesInOutput": 621
         },
         "dist/components/App/App.svelte.css": {
           "bytesInOutput": 0
         },
         "_snowpack/pkg/common/index-32926514.js": {
-          "bytesInOutput": 7859
+          "bytesInOutput": 7860
         },
         "_snowpack/pkg/svelte/internal.js": {
           "bytesInOutput": 0
@@ -1060,10 +1089,10 @@
           "bytesInOutput": 0
         },
         "_snowpack/pkg/@popperjs/core.js": {
-          "bytesInOutput": 18645
+          "bytesInOutput": 18633
         },
         "dist/components/Commons/PICA.svelte.js": {
-          "bytesInOutput": 3500
+          "bytesInOutput": 3510
         },
         "dist/components/Typewriter/Typewriter.svelte.css": {
           "bytesInOutput": 0
@@ -1101,8 +1130,14 @@
         "dist/components/Typewriter/Typewriter.svelte.js": {
           "bytesInOutput": 1589
         },
+        "dist/components/KakaoShareBtn.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/KakaoShareBtn.svelte.js": {
+          "bytesInOutput": 1296
+        },
         "dist/pages/Home.svelte.js": {
-          "bytesInOutput": 7803
+          "bytesInOutput": 7991
         },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 0
@@ -1174,7 +1209,7 @@
           "bytesInOutput": 153
         },
         "dist/components/Commons/Modal/Modal.svelte.js": {
-          "bytesInOutput": 6678
+          "bytesInOutput": 6672
         },
         "dist/components/Image/Image.svelte.css": {
           "bytesInOutput": 0
@@ -1192,22 +1227,22 @@
           "bytesInOutput": 1561
         },
         "dist/pages/Results.svelte.js": {
-          "bytesInOutput": 2878
+          "bytesInOutput": 2879
         },
         "dist/components/Quiz/Quiz.svelte.css": {
           "bytesInOutput": 0
         },
         "dist/components/Quiz/Quiz.svelte.js": {
-          "bytesInOutput": 2005
+          "bytesInOutput": 2008
         },
         "dist/pages/Quizzes.svelte.js": {
-          "bytesInOutput": 2934
+          "bytesInOutput": 2935
         },
         "dist/pages/Types.svelte.css": {
           "bytesInOutput": 0
         },
         "dist/pages/Types.svelte.js": {
-          "bytesInOutput": 4597
+          "bytesInOutput": 4599
         },
         "dist/pages/Type.svelte.css": {
           "bytesInOutput": 0
@@ -1219,25 +1254,25 @@
           "bytesInOutput": 1561
         },
         "dist/pages/Type.svelte.js": {
-          "bytesInOutput": 2561
+          "bytesInOutput": 2562
         },
         "dist/components/MailChimp.svelte.css": {
           "bytesInOutput": 0
         },
         "dist/components/MailChimp.svelte.js": {
-          "bytesInOutput": 1867
+          "bytesInOutput": 1868
         },
         "dist/styles/TailwindStyles.svelte.css": {
           "bytesInOutput": 0
         },
         "dist/components/App/App.svelte.js": {
-          "bytesInOutput": 3817
+          "bytesInOutput": 3937
         },
         "dist/index.js": {
           "bytesInOutput": 139
         }
       },
-      "bytes": 140653
+      "bytes": 142330
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
@@ -1261,10 +1296,13 @@
           "bytesInOutput": 406
         },
         "dist/styles/TailwindStyles.svelte.css": {
-          "bytesInOutput": 13631
+          "bytesInOutput": 13833
         },
         "dist/components/Commons/PICA.svelte.css": {
           "bytesInOutput": 56
+        },
+        "dist/components/KakaoShareBtn.svelte.css": {
+          "bytesInOutput": 126
         },
         "dist/components/MBTI/MBTI.svelte.css": {
           "bytesInOutput": 459
@@ -1306,7 +1344,7 @@
           "bytesInOutput": 100
         }
       },
-      "bytes": 23189
+      "bytes": 23517
     }
   }
 }
