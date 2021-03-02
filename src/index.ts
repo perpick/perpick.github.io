@@ -32,6 +32,7 @@ declare global {
       SNOWPACK_PUBLIC_ES_URL: string;
       SNOWPACK_PUBLIC_ES_USERNAME: string;
       SNOWPACK_PUBLIC_ES_PASSWORD: string;
+      SNOWPACK_PUBLIC_KAKAO_KEY: string;
     };
   }
 }

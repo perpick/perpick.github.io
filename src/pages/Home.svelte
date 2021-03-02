@@ -7,6 +7,7 @@
   import PerfumesAPI from "@src/api/perfumes";
   import PICA from "@src/components/Commons/PICA.svelte";
   import Typewriter from "@src/components/Typewriter/Typewriter.svelte";
+  import KakaoShareBtn from "@src/components/KakaoShareBtn.svelte";
 
   let total = "324,523";
   let submitted = false;
@@ -104,6 +105,9 @@
       </button>
     </div>
     <div>
+      <div class="flex justify-center items-center space-x-2 mt-2">
+        <KakaoShareBtn />
+      </div>
       <h1 class="text-2xl pt-3">Perpick은 지금</h1>
       <p
         class="inline-block my-2 text-pink-300 rounded-lg cursor-pointer hover:text-pink-500 text-base"
