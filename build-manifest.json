@@ -909,7 +909,7 @@
       "imports": []
     },
     "dist/components/Image/RoundedEmbed.svelte.js": {
-      "bytes": 2087,
+      "bytes": 2308,
       "imports": [
         {
           "path": "dist/components/Image/RoundedEmbed.svelte.css",
@@ -964,7 +964,7 @@
       ]
     },
     "dist/components/App/App.svelte.js": {
-      "bytes": 13470,
+      "bytes": 13508,
       "imports": [
         {
           "path": "dist/components/App/App.svelte.css",
@@ -1281,7 +1281,7 @@
           "bytesInOutput": 0
         },
         "dist/components/Image/RoundedEmbed.svelte.js": {
-          "bytesInOutput": 623
+          "bytesInOutput": 708
         },
         "dist/components/MailChimp.svelte.css": {
           "bytesInOutput": 0
@@ -1293,13 +1293,13 @@
           "bytesInOutput": 0
         },
         "dist/components/App/App.svelte.js": {
-          "bytesInOutput": 3937
+          "bytesInOutput": 3958
         },
         "dist/index.js": {
           "bytesInOutput": 139
         }
       },
-      "bytes": 143867
+      "bytes": 143973
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
