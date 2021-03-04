@@ -28,7 +28,11 @@
       {descriptions.animal}
     </h1>
   </div>
-  <p class="m-2 pt-2">{title.summary}</p>
+  <div>
+    {#each title.summary.split(".") as summary}
+      <p class="m-2 pt-2">{summary}</p>
+    {/each}
+  </div>
 </div>
 
 <style>

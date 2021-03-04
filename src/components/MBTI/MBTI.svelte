@@ -14,7 +14,11 @@
 
 <div class="m-4 divide-y-2 divide-gray-200 tracking-widest init_anim">
   <h1 class="m-2 text-2xl text-pink-400">{descriptions.title}</h1>
-  <p class="m-2 pt-2 text-base">{descriptions.detail}</p>
+  <div>
+    {#each descriptions.detail.split(".") as detail}
+      <p class="m-2 pt-2 text-base">{detail}</p>
+    {/each}
+  </div>
 </div>
 
 <style>

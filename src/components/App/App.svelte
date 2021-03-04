@@ -6,7 +6,7 @@
   import Types from "@src/pages/Types.svelte";
   import Type from "@src/pages/Type.svelte";
   import IntersectionObserver from "@src/components/Image/IntersectionObserver.svelte";
-  import RoundedImage from "@src/components/Image/RoundedImage.svelte";
+  import RoundedEmbed from "@src/components/Image/RoundedEmbed.svelte";
   import MailChimp from "@src/components/MailChimp.svelte";
 
   import "@src/styles/TailwindStyles.svelte";
@@ -25,7 +25,7 @@
     }}
   >
     <IntersectionObserver>
-      <RoundedImage src="/banner.png" alt="logo" />
+      <RoundedEmbed src="/banner.svg" alt="logo" type="image/svg+xml" />
     </IntersectionObserver>
   </header>
   <main>
