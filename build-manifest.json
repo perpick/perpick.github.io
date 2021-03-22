@@ -1,7 +1,7 @@
 {
   "inputs": {
     "_snowpack/env.js": {
-      "bytes": 672,
+      "bytes": 670,
       "imports": []
     },
     "dist/components/App/App.svelte.css": {
@@ -1050,7 +1050,7 @@
           "bytesInOutput": 324
         },
         "_snowpack/env.js": {
-          "bytesInOutput": 621
+          "bytesInOutput": 619
         },
         "dist/components/App/App.svelte.css": {
           "bytesInOutput": 0
@@ -1299,7 +1299,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 143973
+      "bytes": 143971
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
