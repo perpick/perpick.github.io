@@ -8,7 +8,7 @@ import type { Filter, Perfumes, SearchedPerfume } from '@src/models'
 const Apis = {
   getTotal: (): AxiosPromise<number> => 
     Request({
-      url: "perfume/generate",
+      url: "perfume/generate/total",
       method: "GET",
     }),
   getPerfumes: ({ email, selects, match, filter }: { email: string, selects:string[], match: string[], filter: Filter}): AxiosPromise<Perfumes> => 
