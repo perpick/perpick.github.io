@@ -161,7 +161,7 @@
       ]
     },
     "dist/api/perfumes.js": {
-      "bytes": 1197,
+      "bytes": 1203,
       "imports": [
         {
           "path": "dist/utils/HttpClient.js",
@@ -381,7 +381,7 @@
       ]
     },
     "dist/pages/Home.svelte.js": {
-      "bytes": 17064,
+      "bytes": 17085,
       "imports": [
         {
           "path": "dist/pages/Home.svelte.css",
@@ -1104,7 +1104,7 @@
           "bytesInOutput": 116
         },
         "dist/api/perfumes.js": {
-          "bytesInOutput": 555
+          "bytesInOutput": 561
         },
         "dist/components/Commons/PICA.svelte.css": {
           "bytesInOutput": 0
@@ -1158,7 +1158,7 @@
           "bytesInOutput": 1296
         },
         "dist/pages/Home.svelte.js": {
-          "bytesInOutput": 7991
+          "bytesInOutput": 8006
         },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 0
@@ -1299,7 +1299,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 143971
+      "bytes": 143992
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
