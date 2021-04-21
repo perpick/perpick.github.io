@@ -54,14 +54,16 @@
   };
 </script>
 
+
+<!--  <Typewriter interval={125} delay={3000}>
+          <p class="text-xs font-thin my-1">
+                이 서비스를 통해 약 {total}번 추천되었어요!
+          </p>
+        </Typewriter> -->
+
 <section class="mb-4">
   <div class="my-1 divide-y-2 divide-pink-200 mx-4">
     <div class="m-2">
-      <Typewriter interval={125} delay={3000}>
-        <p class="text-xs font-thin my-1">
-          이 서비스를 통해 약 {total}번 추천되었어요!
-        </p>
-      </Typewriter>
       <PICA placement="bottom" />
       <div class="relative flex w-full flex-wrap items-stretch mb-3 mt-1">
         <input
