@@ -381,7 +381,7 @@
       ]
     },
     "dist/pages/Home.svelte.js": {
-      "bytes": 17085,
+      "bytes": 15853,
       "imports": [
         {
           "path": "dist/pages/Home.svelte.css",
@@ -1110,7 +1110,7 @@
           "bytesInOutput": 0
         },
         "_snowpack/pkg/@popperjs/core.js": {
-          "bytesInOutput": 18633
+          "bytesInOutput": 18637
         },
         "dist/components/Commons/PICA.svelte.js": {
           "bytesInOutput": 3510
@@ -1158,7 +1158,7 @@
           "bytesInOutput": 1296
         },
         "dist/pages/Home.svelte.js": {
-          "bytesInOutput": 8006
+          "bytesInOutput": 7456
         },
         "dist/pages/Results.svelte.css": {
           "bytesInOutput": 0
@@ -1299,7 +1299,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 143992
+      "bytes": 143446
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
